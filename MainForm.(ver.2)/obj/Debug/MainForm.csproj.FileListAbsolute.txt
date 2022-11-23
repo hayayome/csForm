@@ -1,0 +1,61 @@
+D:\C# 프로젝트\MainForm\bin\Debug\MainForm.exe.config
+D:\C# 프로젝트\MainForm\bin\Debug\MainForm.exe
+D:\C# 프로젝트\MainForm\bin\Debug\MainForm.pdb
+D:\C# 프로젝트\MainForm\obj\Debug\MainForm.csprojAssemblyReference.cache
+D:\C# 프로젝트\MainForm\obj\Debug\MainForm.Properties.Resources.resources
+D:\C# 프로젝트\MainForm\obj\Debug\MainForm.csproj.GenerateResource.cache
+D:\C# 프로젝트\MainForm\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
+D:\C# 프로젝트\MainForm\obj\Debug\MainForm.exe
+D:\C# 프로젝트\MainForm\obj\Debug\MainForm.pdb
+E:\학교\2학년\C# 프로젝트\MainForm\bin\Debug\MainForm.exe.config
+E:\학교\2학년\C# 프로젝트\MainForm\bin\Debug\MainForm.exe
+E:\학교\2학년\C# 프로젝트\MainForm\bin\Debug\MainForm.pdb
+E:\학교\2학년\C# 프로젝트\MainForm\obj\Debug\MainForm.csproj.AssemblyReference.cache
+E:\학교\2학년\C# 프로젝트\MainForm\obj\Debug\MainForm.csproj.SuggestedBindingRedirects.cache
+E:\학교\2학년\C# 프로젝트\MainForm\obj\Debug\MainForm.Form2.resources
+E:\학교\2학년\C# 프로젝트\MainForm\obj\Debug\MainForm.Form3.resources
+E:\학교\2학년\C# 프로젝트\MainForm\obj\Debug\MainForm.Form4.resources
+E:\학교\2학년\C# 프로젝트\MainForm\obj\Debug\MainForm.Form5.resources
+E:\학교\2학년\C# 프로젝트\MainForm\obj\Debug\MainForm.Properties.Resources.resources
+E:\학교\2학년\C# 프로젝트\MainForm\obj\Debug\MainForm.csproj.GenerateResource.cache
+E:\학교\2학년\C# 프로젝트\MainForm\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
+E:\학교\2학년\C# 프로젝트\MainForm\obj\Debug\MainForm.exe
+E:\학교\2학년\C# 프로젝트\MainForm\obj\Debug\MainForm.pdb
+E:\학교\2학년\C# 프로젝트\MainForm\obj\Debug\MainForm.Form1.resources
+E:\학교\2학년\C# 프로젝트\MainForm\obj\Debug\MainForm.Form6.resources
+C:\Users\USER\Desktop\MainForm\bin\Debug\MainForm.exe.config
+C:\Users\USER\Desktop\MainForm\bin\Debug\MainForm.exe
+C:\Users\USER\Desktop\MainForm\bin\Debug\MainForm.pdb
+C:\Users\USER\Desktop\MainForm\obj\Debug\MainForm.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\MainForm\obj\Debug\MainForm.Form1.resources
+C:\Users\USER\Desktop\MainForm\obj\Debug\MainForm.Form2.resources
+C:\Users\USER\Desktop\MainForm\obj\Debug\MainForm.Form3.resources
+C:\Users\USER\Desktop\MainForm\obj\Debug\MainForm.Form4.resources
+C:\Users\USER\Desktop\MainForm\obj\Debug\MainForm.Form5.resources
+C:\Users\USER\Desktop\MainForm\obj\Debug\MainForm.Form6.resources
+C:\Users\USER\Desktop\MainForm\obj\Debug\MainForm.Properties.Resources.resources
+C:\Users\USER\Desktop\MainForm\obj\Debug\MainForm.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\MainForm\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\MainForm\obj\Debug\MainForm.exe
+C:\Users\USER\Desktop\MainForm\obj\Debug\MainForm.pdb
+C:\Users\USER\Desktop\MainForm\bin\Debug\Oracle.DataAccess.dll
+C:\Users\USER\Desktop\MainForm\obj\Debug\MainForm.csproj.CopyComplete
+C:\Users\USER\Desktop\MainForm\obj\Debug\MainForm.Form7.resources
+C:\Users\USER\Desktop\MainForm.(ver.2)\bin\Debug\MainForm.exe.config
+C:\Users\USER\Desktop\MainForm.(ver.2)\bin\Debug\MainForm.exe
+C:\Users\USER\Desktop\MainForm.(ver.2)\bin\Debug\MainForm.pdb
+C:\Users\USER\Desktop\MainForm.(ver.2)\bin\Debug\Oracle.DataAccess.dll
+C:\Users\USER\Desktop\MainForm.(ver.2)\obj\Debug\MainForm.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\MainForm.(ver.2)\obj\Debug\MainForm.Form1.resources
+C:\Users\USER\Desktop\MainForm.(ver.2)\obj\Debug\MainForm.Form2.resources
+C:\Users\USER\Desktop\MainForm.(ver.2)\obj\Debug\MainForm.Form3.resources
+C:\Users\USER\Desktop\MainForm.(ver.2)\obj\Debug\MainForm.Form4.resources
+C:\Users\USER\Desktop\MainForm.(ver.2)\obj\Debug\MainForm.Form5.resources
+C:\Users\USER\Desktop\MainForm.(ver.2)\obj\Debug\MainForm.Form6.resources
+C:\Users\USER\Desktop\MainForm.(ver.2)\obj\Debug\MainForm.Form7.resources
+C:\Users\USER\Desktop\MainForm.(ver.2)\obj\Debug\MainForm.Properties.Resources.resources
+C:\Users\USER\Desktop\MainForm.(ver.2)\obj\Debug\MainForm.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\MainForm.(ver.2)\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\MainForm.(ver.2)\obj\Debug\MainForm.csproj.CopyComplete
+C:\Users\USER\Desktop\MainForm.(ver.2)\obj\Debug\MainForm.exe
+C:\Users\USER\Desktop\MainForm.(ver.2)\obj\Debug\MainForm.pdb
