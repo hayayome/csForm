@@ -16,5 +16,10 @@ namespace MainForm
         {
             InitializeComponent();
         }
+
+        private void find_pw_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
