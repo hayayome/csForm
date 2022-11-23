@@ -17,12 +17,6 @@ namespace MainForm
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form6 f6 = new Form6();
-            f6.ShowDialog();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             String userid = textBox1.Text;
@@ -61,6 +55,12 @@ namespace MainForm
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Form6 f6 = new Form6();
+            f6.ShowDialog();
         }
     }
     }
