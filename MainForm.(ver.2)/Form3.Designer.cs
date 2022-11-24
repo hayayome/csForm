@@ -159,7 +159,7 @@ namespace MainForm
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(692, 31);
+            this.button3.Location = new System.Drawing.Point(623, 31);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(222, 40);
             this.button3.TabIndex = 12;
@@ -169,7 +169,7 @@ namespace MainForm
             // 
             // Btnadd
             // 
-            this.Btnadd.Location = new System.Drawing.Point(405, 261);
+            this.Btnadd.Location = new System.Drawing.Point(405, 277);
             this.Btnadd.Name = "Btnadd";
             this.Btnadd.Size = new System.Drawing.Size(75, 23);
             this.Btnadd.TabIndex = 13;
@@ -189,7 +189,7 @@ namespace MainForm
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(863, 232);
+            this.button1.Location = new System.Drawing.Point(405, 342);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 15;

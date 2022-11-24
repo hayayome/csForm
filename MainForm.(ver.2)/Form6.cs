@@ -55,6 +55,16 @@ namespace MainForm
                 }
             }
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

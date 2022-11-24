@@ -31,11 +31,13 @@ namespace MainForm
             if (userid.Equals("admin") && userpw.Equals("1234"))
             {
                 MessageBox.Show("관리자 로그인을 성공했습니다.", "로그인");
+                this.Visible = false;
                 Form7 f7 = new Form7();
                 f7.Show();
             } else if (userid.Equals("user") && userpw.Equals("1234"))
                 {
                     MessageBox.Show("로그인에 성공했습니다.", "로그인");
+                    this.Visible = false;
                     Form2 f2 = new Form2();
                     f2.Show();
                 }
@@ -46,5 +48,19 @@ namespace MainForm
                 }
             }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
     }
