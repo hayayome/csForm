@@ -40,20 +40,11 @@ namespace MainForm
             {
                 MessageBox.Show("닉네임을 입력해주세요.");
             }
-            else if (userid != "")
-            {
-                if (userpw1 == userpw)
-                {
-                    if (userpw != "")
-                    {
-                        if (nickName != "")
-                        {
-                            MessageBox.Show("회원가입을 성공하였습니다.");
-                            this.Close();
-                        }
-                    }
-                }
+            else {
+                MessageBox.Show("회원가입을 성공하였습니다.");
+                this.Close();
             }
+                            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
