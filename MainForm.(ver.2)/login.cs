@@ -68,7 +68,7 @@ namespace MainForm
             {
                 MessageBox.Show("관리자 로그인을 성공했습니다.", "로그인");
                 this.Visible = false;
-                find_song f7 = new find_song();
+                add_song f7 = new add_song();
                 f7.Show();
             } else if (userid.Equals("user") && userpw.Equals("1234"))
                 {

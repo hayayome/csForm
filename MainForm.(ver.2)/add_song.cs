@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MainForm
 {
-    public partial class find_song : Form
+    public partial class add_song : Form
     {
-        public find_song()
+        public add_song()
         {
             InitializeComponent();
         }
