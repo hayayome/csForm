@@ -64,24 +64,26 @@ namespace MainForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String userid = txtId.Text;
-            String userpw = txtPw.Text;
-            String userpw1 = txtPw2.Text;
-            String nickName = txtNick.Text;
+            string userID = txtId.Text;
+            string userPW = txtPw.Text;
+            string userPW2 = txtPw2.Text;
+            string userNICK = txtNick.Text;
 
-            if (string.IsNullOrEmpty(userid))
+
+
+            if (userID == idHolder || userID == "")
             {
                 MessageBox.Show("아이디를 입력해주세요.");
             }
-            else if (string.IsNullOrEmpty(userpw))
+            else if (userPW == pwHolder || userPW == "")
             {
                 MessageBox.Show("비밀번호를 입력해주세요.");
             }
-            else if (userpw != userpw1)
+            else if (userPW != userPW2)
             {
                 MessageBox.Show("비밀번호가 다릅니다.");
             }
-            else if (string.IsNullOrEmpty(nickName))
+            else if (userNICK == nickHolder || userNICK == "")
             {
                 MessageBox.Show("닉네임을 입력해주세요.");
             }
