@@ -140,11 +140,11 @@ namespace MainForm
             this.DAOpenBtn.UseVisualStyleBackColor = true;
             this.DAOpenBtn.Click += new System.EventHandler(this.DAOpenBtn_Click);
             // 
-            // Form7
+            // find_song
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 462);
+            this.ClientSize = new System.Drawing.Size(764, 531);
             this.Controls.Add(this.DAOpenBtn);
             this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.UpdateBtn);
@@ -156,7 +156,9 @@ namespace MainForm
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form7";
+            this.MaximumSize = new System.Drawing.Size(780, 570);
+            this.MinimumSize = new System.Drawing.Size(780, 570);
+            this.Name = "find_song";
             this.Text = "Form7";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

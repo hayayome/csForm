@@ -196,11 +196,11 @@ namespace MainForm
             this.button1.Text = "제거하기";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // Form3
+            // make_playlist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 509);
+            this.ClientSize = new System.Drawing.Size(976, 531);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Btndelete);
             this.Controls.Add(this.Btnadd);
@@ -217,7 +217,7 @@ namespace MainForm
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.txttitle);
-            this.Name = "Form3";
+            this.Name = "make_playlist";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.DBGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DBGrid2)).EndInit();

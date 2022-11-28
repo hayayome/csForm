@@ -64,10 +64,6 @@ C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\bin\Debug\MainForm.exe
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\bin\Debug\MainForm.pdb
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\bin\Debug\Oracle.DataAccess.dll
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.csprojAssemblyReference.cache
-C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form3.resources
-C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form4.resources
-C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form5.resources
-C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form7.resources
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Properties.Resources.resources
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.csproj.GenerateResource.cache
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
@@ -99,3 +95,7 @@ C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.cspro
 C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.exe
 C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.pdb
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.sign_up.resources
+C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.make_playlist.resources
+C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.save_playlist.resources
+C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.playlist.resources
+C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.find_song.resources

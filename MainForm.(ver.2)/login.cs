@@ -73,10 +73,10 @@ namespace MainForm
             } else if (userid.Equals("user") && userpw.Equals("1234"))
                 {
                     MessageBox.Show("로그인에 성공했습니다.", "로그인");
-                    this.Visible = false;
                     main f2 = new main();
                     f2.Show();
-                }
+                    this.Hide();
+            }
                 else
                 {
                     txtId.Text = "";
@@ -149,6 +149,11 @@ namespace MainForm
         {
             if (e.KeyCode == Keys.Enter)
                 button1_Click(sender, e);
+        }
+
+        private void login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Close();
         }
     }
     }

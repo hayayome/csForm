@@ -186,6 +186,7 @@ namespace MainForm
             this.MinimumSize = new System.Drawing.Size(385, 540);
             this.Name = "login";
             this.Text = "로그인";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.login_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.login_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();

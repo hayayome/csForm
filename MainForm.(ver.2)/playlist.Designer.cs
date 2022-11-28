@@ -65,7 +65,7 @@ namespace MainForm
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(324, 124);
+            this.dataGridView2.Location = new System.Drawing.Point(275, 124);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 23;
@@ -92,7 +92,7 @@ namespace MainForm
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(643, 350);
+            this.button2.Location = new System.Drawing.Point(629, 348);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(96, 29);
@@ -103,7 +103,7 @@ namespace MainForm
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(578, 23);
+            this.button3.Location = new System.Drawing.Point(529, 21);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(196, 42);
@@ -114,7 +114,7 @@ namespace MainForm
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(524, 350);
+            this.button4.Location = new System.Drawing.Point(509, 348);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 29);
@@ -124,17 +124,17 @@ namespace MainForm
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(324, 354);
+            this.textBox1.Location = new System.Drawing.Point(301, 350);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(168, 21);
             this.textBox1.TabIndex = 8;
             // 
-            // Form5
+            // playlist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(764, 531);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -144,7 +144,9 @@ namespace MainForm
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form5";
+            this.MaximumSize = new System.Drawing.Size(780, 570);
+            this.MinimumSize = new System.Drawing.Size(780, 570);
+            this.Name = "playlist";
             this.Text = "플레이리스트 목록";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
