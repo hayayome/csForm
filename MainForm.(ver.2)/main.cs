@@ -53,7 +53,14 @@ namespace MainForm
             form.Dock = DockStyle.Fill;
         }
 
+        private void main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
 
-
+        private void main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

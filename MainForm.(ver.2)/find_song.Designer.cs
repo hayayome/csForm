@@ -46,7 +46,7 @@ namespace MainForm
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 168);
+            this.dataGridView1.Location = new System.Drawing.Point(53, 169);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
             this.dataGridView1.Size = new System.Drawing.Size(593, 229);
@@ -132,7 +132,7 @@ namespace MainForm
             // 
             // DAOpenBtn
             // 
-            this.DAOpenBtn.Location = new System.Drawing.Point(221, 416);
+            this.DAOpenBtn.Location = new System.Drawing.Point(512, 418);
             this.DAOpenBtn.Name = "DAOpenBtn";
             this.DAOpenBtn.Size = new System.Drawing.Size(180, 34);
             this.DAOpenBtn.TabIndex = 10;
@@ -144,6 +144,7 @@ namespace MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(764, 531);
             this.Controls.Add(this.DAOpenBtn);
             this.Controls.Add(this.DeleteBtn);

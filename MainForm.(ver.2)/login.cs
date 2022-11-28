@@ -153,7 +153,7 @@ namespace MainForm
 
         private void login_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
     }
     }
