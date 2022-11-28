@@ -19,7 +19,7 @@ namespace MainForm
         private void RemovePlaceholder(object sender, EventArgs e)
         {
             TextBox txt = (TextBox)sender;
-            if (txt.Text == idHolder || txt.Text == pwHolder)
+            if (txt.Text == idHolder | txt.Text == pwHolder)
             {
                 txt.ForeColor = Color.Black;
                 txt.Text = string.Empty;
@@ -68,7 +68,7 @@ namespace MainForm
             {
                 MessageBox.Show("관리자 로그인을 성공했습니다.", "로그인");
                 this.Visible = false;
-                Form7 f7 = new Form7();
+                find_song f7 = new find_song();
                 f7.Show();
             } else if (userid.Equals("user") && userpw.Equals("1234"))
                 {
@@ -79,11 +79,11 @@ namespace MainForm
                 }
                 else
                 {
+                    txtId.Text = "";
+                    txtPw.Text = "";
                     MessageBox.Show("아이디/비밀번호가 맞지 않습니다.");
-                    txtId.Text = string.Empty;
-                    txtPw.Text = string.Empty;
-
-            }
+                
+                }
             }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

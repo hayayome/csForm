@@ -1,7 +1,7 @@
 ﻿
 namespace MainForm
 {
-    partial class Form5
+    partial class playlist
     {
         /// <summary>
         /// Required designer variable.

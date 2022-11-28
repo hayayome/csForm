@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MainForm
 {
-    public partial class Form3 : Form
+    public partial class make_playlist : Form
     {
-        public Form3()
+        public make_playlist()
         {
             InitializeComponent();
         }
@@ -25,13 +25,13 @@ namespace MainForm
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form5 f5 = new Form5();
+            playlist f5 = new playlist();
             f5.ShowDialog();
         }
 
         private void Btndelete_Click(object sender, EventArgs e)
         {
-            Form4 f4 = new Form4();
+            save_playlist f4 = new save_playlist();
             f4.Show();
         }
 

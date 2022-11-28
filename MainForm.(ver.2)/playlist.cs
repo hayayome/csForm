@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace MainForm
 {
-    public partial class Form5 : Form
+    public partial class playlist : Form
     {
-        public Form5()
+        public playlist()
         {
             InitializeComponent();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form3 f3 = new Form3();
+            make_playlist f3 = new make_playlist();
             f3.Show();
         }
 

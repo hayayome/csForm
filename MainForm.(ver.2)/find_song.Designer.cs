@@ -1,7 +1,7 @@
 ﻿
 namespace MainForm
 {
-    partial class Form7
+    partial class find_song
     {
         /// <summary>
         /// Required designer variable.

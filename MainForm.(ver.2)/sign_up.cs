@@ -62,6 +62,14 @@ namespace MainForm
             }
         }
 
+        private void resetText()
+        {
+            txtId.Text = "";
+            txtPw.Text = "";
+            txtPw2.Text = "";
+            txtNick.Text = "";
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string userID = txtId.Text;
@@ -74,18 +82,22 @@ namespace MainForm
             if (userID == idHolder || userID == "")
             {
                 MessageBox.Show("아이디를 입력해주세요.");
+                resetText();
             }
             else if (userPW == pwHolder || userPW == "")
             {
                 MessageBox.Show("비밀번호를 입력해주세요.");
+                resetText();
             }
-            else if (userPW != userPW2)
+            else if (!userPW.Equals(userPW2))
             {
                 MessageBox.Show("비밀번호가 다릅니다.");
+                resetText();
             }
             else if (userNICK == nickHolder || userNICK == "")
             {
                 MessageBox.Show("닉네임을 입력해주세요.");
+                resetText();
             }
             else {
                 MessageBox.Show("회원가입을 성공하였습니다.");
@@ -110,6 +122,18 @@ namespace MainForm
         }
 
         private void sign_up_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                button1_Click(sender, e);
+        }
+
+        private void txtId_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                button1_Click(sender, e);
+        }
+
+        private void txtPw_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
                 button1_Click(sender, e);

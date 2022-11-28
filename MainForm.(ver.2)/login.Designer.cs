@@ -64,7 +64,7 @@ namespace MainForm
             this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtId.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtId.Location = new System.Drawing.Point(52, 188);
-            this.txtId.MaxLength = 30;
+            this.txtId.MaxLength = 20;
             this.txtId.Multiline = true;
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(262, 30);
@@ -78,7 +78,7 @@ namespace MainForm
             this.txtPw.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPw.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtPw.Location = new System.Drawing.Point(52, 224);
-            this.txtPw.MaxLength = 30;
+            this.txtPw.MaxLength = 20;
             this.txtPw.Multiline = true;
             this.txtPw.Name = "txtPw";
             this.txtPw.Size = new System.Drawing.Size(262, 30);

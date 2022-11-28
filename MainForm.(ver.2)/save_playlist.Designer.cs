@@ -1,7 +1,7 @@
 ﻿
 namespace MainForm
 {
-    partial class Form4
+    partial class save_playlist
     {
         /// <summary>
         /// Required designer variable.

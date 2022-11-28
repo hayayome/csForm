@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MainForm
 {
-    public partial class Form4 : Form
+    public partial class save_playlist : Form
     {
-        public Form4()
+        public save_playlist()
         {
             InitializeComponent();
         }

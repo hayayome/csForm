@@ -67,7 +67,6 @@ C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.csproj
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form3.resources
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form4.resources
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form5.resources
-C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form6.resources
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form7.resources
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Properties.Resources.resources
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.csproj.GenerateResource.cache
@@ -99,3 +98,4 @@ C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.cspro
 C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.csproj.CopyComplete
 C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.exe
 C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.pdb
+C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.sign_up.resources
