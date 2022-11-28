@@ -1,7 +1,7 @@
 ﻿
 namespace MainForm
 {
-    partial class Form2
+    partial class main
     {
         /// <summary>
         /// Required designer variable.

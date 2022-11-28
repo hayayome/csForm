@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace MainForm
 {
-    public partial class Form1 : Form
+    public partial class login : Form
     {
         const string idHolder = "아이디";
         const string pwHolder = "비밀번호";
@@ -19,7 +19,7 @@ namespace MainForm
         private void RemovePlaceholder(object sender, EventArgs e)
         {
             TextBox txt = (TextBox)sender;
-            if (txt.Text == idHolder | txt.Text == pwHolder)
+            if (txt.Text == idHolder || txt.Text == pwHolder)
             {
                 txt.ForeColor = Color.Black;
                 txt.Text = string.Empty;
@@ -42,7 +42,7 @@ namespace MainForm
 
 
 
-        public Form1()
+        public login()
         {
             InitializeComponent();
 
@@ -74,7 +74,7 @@ namespace MainForm
                 {
                     MessageBox.Show("로그인에 성공했습니다.", "로그인");
                     this.Visible = false;
-                    Form2 f2 = new Form2();
+                    main f2 = new main();
                     f2.Show();
                 }
                 else

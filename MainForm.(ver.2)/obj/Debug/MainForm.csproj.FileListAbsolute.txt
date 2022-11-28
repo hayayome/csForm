@@ -64,8 +64,6 @@ C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\bin\Debug\MainForm.exe
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\bin\Debug\MainForm.pdb
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\bin\Debug\Oracle.DataAccess.dll
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.csprojAssemblyReference.cache
-C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form1.resources
-C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form2.resources
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form3.resources
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form4.resources
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form5.resources
@@ -79,3 +77,5 @@ C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.exe
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.pdb
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.find_pw.resources
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.g.resources
+C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.login.resources
+C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.main.resources
