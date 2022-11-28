@@ -1,6 +1,6 @@
 ﻿namespace MainForm
 {
-    partial class Form6
+    partial class sign_up
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(sign_up));
             this.txtId = new System.Windows.Forms.TextBox();
             this.txtPw = new System.Windows.Forms.TextBox();
             this.txtPw2 = new System.Windows.Forms.TextBox();
@@ -46,7 +46,7 @@
             this.txtId.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtId.Location = new System.Drawing.Point(57, 172);
             this.txtId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtId.MaxLength = 32;
+            this.txtId.MaxLength = 30;
             this.txtId.Multiline = true;
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(262, 30);
@@ -60,7 +60,7 @@
             this.txtPw.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtPw.Location = new System.Drawing.Point(57, 214);
             this.txtPw.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPw.MaxLength = 32;
+            this.txtPw.MaxLength = 30;
             this.txtPw.Multiline = true;
             this.txtPw.Name = "txtPw";
             this.txtPw.Size = new System.Drawing.Size(262, 30);
@@ -74,7 +74,7 @@
             this.txtPw2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtPw2.Location = new System.Drawing.Point(57, 256);
             this.txtPw2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPw2.MaxLength = 32;
+            this.txtPw2.MaxLength = 30;
             this.txtPw2.Multiline = true;
             this.txtPw2.Name = "txtPw2";
             this.txtPw2.Size = new System.Drawing.Size(262, 30);
@@ -87,7 +87,7 @@
             this.txtNick.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtNick.Location = new System.Drawing.Point(57, 298);
             this.txtNick.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtNick.MaxLength = 32;
+            this.txtNick.MaxLength = 30;
             this.txtNick.Multiline = true;
             this.txtNick.Name = "txtNick";
             this.txtNick.Size = new System.Drawing.Size(262, 30);
@@ -130,7 +130,7 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "계정 생성";
             // 
-            // Form6
+            // sign_up
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -146,9 +146,10 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximumSize = new System.Drawing.Size(400, 500);
             this.MinimumSize = new System.Drawing.Size(400, 500);
-            this.Name = "Form6";
+            this.Name = "sign_up";
             this.Text = "회원가입";
             this.Load += new System.EventHandler(this.Form6_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.sign_up_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

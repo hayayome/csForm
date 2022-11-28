@@ -64,12 +64,13 @@ namespace MainForm
             this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtId.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtId.Location = new System.Drawing.Point(52, 188);
-            this.txtId.MaxLength = 32;
+            this.txtId.MaxLength = 30;
             this.txtId.Multiline = true;
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(262, 30);
             this.txtId.TabIndex = 1;
             this.txtId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtId_KeyDown);
             // 
             // txtPw
             // 
@@ -77,12 +78,13 @@ namespace MainForm
             this.txtPw.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPw.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.txtPw.Location = new System.Drawing.Point(52, 224);
-            this.txtPw.MaxLength = 32;
+            this.txtPw.MaxLength = 30;
             this.txtPw.Multiline = true;
             this.txtPw.Name = "txtPw";
             this.txtPw.Size = new System.Drawing.Size(262, 30);
             this.txtPw.TabIndex = 2;
             this.txtPw.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtPw.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPw_KeyDown);
             // 
             // findPw
             // 
@@ -164,7 +166,7 @@ namespace MainForm
             this.label4.TabIndex = 17;
             this.label4.Text = "이용하실 수 있습니다";
             // 
-            // Form1
+            // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -182,9 +184,10 @@ namespace MainForm
             this.Controls.Add(this.btnLogin);
             this.MaximumSize = new System.Drawing.Size(385, 540);
             this.MinimumSize = new System.Drawing.Size(385, 540);
-            this.Name = "Form1";
+            this.Name = "login";
             this.Text = "로그인";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.login_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -80,8 +80,10 @@ namespace MainForm
                 else
                 {
                     MessageBox.Show("아이디/비밀번호가 맞지 않습니다.");
+                    txtId.Text = string.Empty;
+                    txtPw.Text = string.Empty;
 
-                }
+            }
             }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -101,7 +103,7 @@ namespace MainForm
 
         private void label4_Click(object sender, EventArgs e)
         {
-            Form6 f6 = new Form6();
+            sign_up f6 = new sign_up();
             f6.ShowDialog();
         }
 
@@ -129,6 +131,24 @@ namespace MainForm
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void login_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                button1_Click(sender, e);
+        }
+
+        private void txtId_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                button1_Click(sender, e);
+        }
+
+        private void txtPw_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                button1_Click(sender, e);
         }
     }
     }

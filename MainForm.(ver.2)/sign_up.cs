@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace MainForm
 {
-    public partial class Form6 : Form
+    public partial class sign_up : Form
     {
         const string idHolder = "아이디";
         const string pwHolder = "비밀번호";
@@ -43,7 +43,7 @@ namespace MainForm
             }
         }
 
-        public Form6()
+        public sign_up()
         {
             InitializeComponent();
 
@@ -107,6 +107,12 @@ namespace MainForm
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void sign_up_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                button1_Click(sender, e);
         }
     }
 }
