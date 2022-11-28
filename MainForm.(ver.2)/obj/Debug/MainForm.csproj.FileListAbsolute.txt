@@ -98,4 +98,5 @@ C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.sign_u
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.make_playlist.resources
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.save_playlist.resources
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.playlist.resources
-C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.find_song.resources
+C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.add_song_detail.resources
+C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.add_song.resources

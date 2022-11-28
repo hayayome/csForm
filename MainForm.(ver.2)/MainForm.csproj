@@ -57,6 +57,12 @@
     <Compile Include="find_pw.Designer.cs">
       <DependentUpon>find_pw.cs</DependentUpon>
     </Compile>
+    <Compile Include="add_song_detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_song_detail.Designer.cs">
+      <DependentUpon>add_song_detail.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,16 +99,19 @@
     <Compile Include="sign_up.Designer.cs">
       <DependentUpon>sign_up.cs</DependentUpon>
     </Compile>
-    <Compile Include="find_song.cs">
+    <Compile Include="add_song.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="find_song.Designer.cs">
-      <DependentUpon>find_song.cs</DependentUpon>
+    <Compile Include="add_song.Designer.cs">
+      <DependentUpon>add_song.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="find_pw.resx">
       <DependentUpon>find_pw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add_song_detail.resx">
+      <DependentUpon>add_song_detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -122,8 +131,8 @@
     <EmbeddedResource Include="sign_up.resx">
       <DependentUpon>sign_up.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="find_song.resx">
-      <DependentUpon>find_song.cs</DependentUpon>
+    <EmbeddedResource Include="add_song.resx">
+      <DependentUpon>add_song.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
