@@ -77,3 +77,4 @@ C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.csproj
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.csproj.CopyComplete
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.exe
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.pdb
+C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.find_pw.resources

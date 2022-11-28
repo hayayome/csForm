@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtPw = new System.Windows.Forms.TextBox();
+            this.txtPw2 = new System.Windows.Forms.TextBox();
+            this.txtNick = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -42,53 +42,48 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtId
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox1.Location = new System.Drawing.Point(34, 256);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 22);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "아이디";
+            this.txtId.BackColor = System.Drawing.SystemColors.Window;
+            this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtId.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtId.Location = new System.Drawing.Point(34, 256);
+            this.txtId.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(231, 22);
+            this.txtId.TabIndex = 0;
+            this.txtId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // textBox2
+            // txtPw
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox2.Location = new System.Drawing.Point(34, 289);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(231, 22);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "비밀번호";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtPw.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPw.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtPw.Location = new System.Drawing.Point(34, 289);
+            this.txtPw.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPw.Name = "txtPw";
+            this.txtPw.Size = new System.Drawing.Size(231, 22);
+            this.txtPw.TabIndex = 1;
+            this.txtPw.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // textBox3
+            // txtPw2
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox3.Location = new System.Drawing.Point(34, 322);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(231, 22);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "비밀번호 확인";
+            this.txtPw2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPw2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtPw2.Location = new System.Drawing.Point(34, 322);
+            this.txtPw2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPw2.Name = "txtPw2";
+            this.txtPw2.Size = new System.Drawing.Size(231, 22);
+            this.txtPw2.TabIndex = 2;
             // 
-            // textBox4
+            // txtNick
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox4.Location = new System.Drawing.Point(34, 355);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(231, 22);
-            this.textBox4.TabIndex = 3;
-            this.textBox4.Text = "닉네임";
+            this.txtNick.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNick.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtNick.Location = new System.Drawing.Point(34, 355);
+            this.txtNick.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtNick.Name = "txtNick";
+            this.txtNick.Size = new System.Drawing.Size(231, 22);
+            this.txtNick.TabIndex = 3;
             // 
             // button1
             // 
@@ -155,10 +150,10 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNick);
+            this.Controls.Add(this.txtPw2);
+            this.Controls.Add(this.txtPw);
+            this.Controls.Add(this.txtId);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form6";
             this.Text = "회원가입";
@@ -171,10 +166,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtPw;
+        private System.Windows.Forms.TextBox txtPw2;
+        private System.Windows.Forms.TextBox txtNick;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
