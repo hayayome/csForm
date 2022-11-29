@@ -201,7 +201,7 @@ namespace MainForm
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(976, 531);
+            this.ClientSize = new System.Drawing.Size(1081, 531);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Btndelete);
             this.Controls.Add(this.Btnadd);
@@ -219,7 +219,7 @@ namespace MainForm
             this.Controls.Add(this.txtname);
             this.Controls.Add(this.txttitle);
             this.Name = "make_playlist";
-            this.Text = "Form3";
+            this.Text = "make_playlist";
             ((System.ComponentModel.ISupportInitialize)(this.DBGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DBGrid2)).EndInit();
             this.ResumeLayout(false);

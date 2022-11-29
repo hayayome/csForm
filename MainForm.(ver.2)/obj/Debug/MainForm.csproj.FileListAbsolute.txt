@@ -83,11 +83,7 @@ C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.g.res
 C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.find_pw.resources
 C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.login.resources
 C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.main.resources
-C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form3.resources
-C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form4.resources
-C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form5.resources
 C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.sign_up.resources
-C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Form7.resources
 C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.Properties.Resources.resources
 C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.csproj.GenerateResource.cache
 C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.csproj.CoreCompileInputs.cache
@@ -100,3 +96,9 @@ C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.save_p
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.playlist.resources
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.add_song_detail.resources
 C:\Users\USER\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.add_song.resources
+C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.add_song_detail.resources
+C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.make_playlist.resources
+C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.save_playlist.resources
+C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.playlist.resources
+C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.add_song.resources
