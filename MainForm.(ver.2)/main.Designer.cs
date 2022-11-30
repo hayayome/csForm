@@ -100,7 +100,7 @@ namespace MainForm
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(172, 9);
+            this.panel1.Location = new System.Drawing.Point(175, 10);
             this.panel1.MaximumSize = new System.Drawing.Size(780, 570);
             this.panel1.MinimumSize = new System.Drawing.Size(780, 570);
             this.panel1.Name = "panel1";
