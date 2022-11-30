@@ -53,11 +53,11 @@ namespace MainForm
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
             DBAdapter.SelectCommand = new OracleCommand
-            ("select * from SINGER where singername = '" + singername + "';", conn);
+            ("select * from SINGER where singername = '" + singername + "'", conn);
             DBAdapter.SelectCommand.Parameters.Add("name", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
-            DBAdapter.Fill(DS, "produce");
-            DataTable phoneTable = DS.Tables["produce"];
+            DBAdapter.Fill(DS, "Singer");
+            DataTable phoneTable = DS.Tables["Singer"];
             DBGrid2.DataSource = phoneTable;
         }
 
