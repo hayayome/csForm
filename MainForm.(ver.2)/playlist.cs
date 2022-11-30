@@ -17,12 +17,6 @@ namespace MainForm
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            make_playlist f3 = new make_playlist();
-            f3.Show();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             try

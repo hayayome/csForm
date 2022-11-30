@@ -30,9 +30,27 @@ namespace MainForm
             }
             else
             {
-                MessageBox.Show("저장이 완료되었습니다.");
-                this.Close();
+                if (MessageBox.Show("저장하시겠습니까?", "저장", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    MessageBox.Show("저장이 완료되었습니다.");
+                    this.Close();
+                }
+                else
+                {
+                    this.Close();
+                }
             }
+        }
+
+        private void save_playlist_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                button1_Click(sender, e);
         }
     }
 }

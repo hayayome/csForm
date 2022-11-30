@@ -158,6 +158,7 @@ namespace MainForm
             this.MinimumSize = new System.Drawing.Size(980, 630);
             this.Name = "main";
             this.Text = "작업화면 선택";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.main_FormClosing);
             this.Load += new System.EventHandler(this.main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

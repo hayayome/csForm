@@ -15,18 +15,7 @@ namespace MainForm
         public make_playlist()
         {
             InitializeComponent();
-        }
-
-        private void reset_Click(object sender, EventArgs e)
-        {
-            txttitle.Clear();
-            txtname.Clear();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            playlist f5 = new playlist();
-            f5.ShowDialog();
+            comboBox1.SelectedIndex = 0;
         }
 
         private void Btndelete_Click(object sender, EventArgs e)
@@ -98,6 +87,21 @@ namespace MainForm
             }
 
         private void search_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void make_playlist_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

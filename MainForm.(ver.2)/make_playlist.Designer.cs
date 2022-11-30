@@ -30,196 +30,198 @@ namespace MainForm
         private void InitializeComponent()
         {
             this.txttitle = new System.Windows.Forms.TextBox();
-            this.txtname = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.DBGrid1 = new System.Windows.Forms.DataGridView();
-            this.reset = new System.Windows.Forms.Button();
             this.search = new System.Windows.Forms.Button();
             this.SearchOpenBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.PlayListOpenBtn = new System.Windows.Forms.Button();
             this.DBGrid2 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
             this.Btnadd = new System.Windows.Forms.Button();
             this.Btndelete = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnpop = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.DBGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DBGrid2)).BeginInit();
             this.SuspendLayout();
             // 
             // txttitle
             // 
-            this.txttitle.Location = new System.Drawing.Point(127, 31);
+            this.txttitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
+            this.txttitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txttitle.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txttitle.Location = new System.Drawing.Point(166, 52);
             this.txttitle.Name = "txttitle";
-            this.txttitle.Size = new System.Drawing.Size(100, 21);
+            this.txttitle.Size = new System.Drawing.Size(228, 29);
             this.txttitle.TabIndex = 0;
-            // 
-            // txtname
-            // 
-            this.txtname.Location = new System.Drawing.Point(127, 74);
-            this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(100, 21);
-            this.txtname.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "제목";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 77);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 12);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "가수/그룹 이름";
             // 
             // DBGrid1
             // 
+            this.DBGrid1.BackgroundColor = System.Drawing.Color.White;
             this.DBGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DBGrid1.Location = new System.Drawing.Point(43, 210);
+            this.DBGrid1.Location = new System.Drawing.Point(43, 151);
             this.DBGrid1.Name = "DBGrid1";
             this.DBGrid1.RowTemplate.Height = 23;
-            this.DBGrid1.Size = new System.Drawing.Size(349, 229);
+            this.DBGrid1.Size = new System.Drawing.Size(298, 229);
             this.DBGrid1.TabIndex = 4;
-            // 
-            // reset
-            // 
-            this.reset.Location = new System.Drawing.Point(205, 121);
-            this.reset.Name = "reset";
-            this.reset.Size = new System.Drawing.Size(75, 23);
-            this.reset.TabIndex = 5;
-            this.reset.Text = "다시쓰기";
-            this.reset.UseVisualStyleBackColor = true;
-            this.reset.Click += new System.EventHandler(this.reset_Click);
             // 
             // search
             // 
-            this.search.Location = new System.Drawing.Point(86, 121);
+            this.search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(130)))), ((int)(((byte)(221)))));
+            this.search.FlatAppearance.BorderSize = 0;
+            this.search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.search.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.search.ForeColor = System.Drawing.Color.White;
+            this.search.Location = new System.Drawing.Point(400, 52);
             this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(75, 23);
+            this.search.Size = new System.Drawing.Size(75, 29);
             this.search.TabIndex = 6;
-            this.search.Text = "검색하기";
-            this.search.UseVisualStyleBackColor = true;
+            this.search.Text = "검색";
+            this.search.UseVisualStyleBackColor = false;
             this.search.Click += new System.EventHandler(this.search_Click);
             // 
             // SearchOpenBtn
             // 
-            this.SearchOpenBtn.Location = new System.Drawing.Point(146, 458);
+            this.SearchOpenBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
+            this.SearchOpenBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SearchOpenBtn.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.SearchOpenBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SearchOpenBtn.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.SearchOpenBtn.Location = new System.Drawing.Point(43, 386);
             this.SearchOpenBtn.Name = "SearchOpenBtn";
-            this.SearchOpenBtn.Size = new System.Drawing.Size(113, 39);
+            this.SearchOpenBtn.Size = new System.Drawing.Size(170, 39);
             this.SearchOpenBtn.TabIndex = 7;
-            this.SearchOpenBtn.Text = "검색 목록 열기";
-            this.SearchOpenBtn.UseVisualStyleBackColor = true;
+            this.SearchOpenBtn.Text = "검색 목록 가져오기";
+            this.SearchOpenBtn.UseVisualStyleBackColor = false;
             this.SearchOpenBtn.Click += new System.EventHandler(this.SearchOpenBtn_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(169, 182);
+            this.label3.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label3.Location = new System.Drawing.Point(40, 131);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 12);
+            this.label3.Size = new System.Drawing.Size(83, 17);
             this.label3.TabIndex = 8;
             this.label3.Text = "곡 검색 목록";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(597, 182);
+            this.label4.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.Location = new System.Drawing.Point(413, 131);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 12);
+            this.label4.Size = new System.Drawing.Size(148, 17);
             this.label4.TabIndex = 11;
             this.label4.Text = "플레이리스트 제작 현황";
             // 
             // PlayListOpenBtn
             // 
-            this.PlayListOpenBtn.Location = new System.Drawing.Point(617, 458);
+            this.PlayListOpenBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
+            this.PlayListOpenBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PlayListOpenBtn.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.PlayListOpenBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PlayListOpenBtn.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.PlayListOpenBtn.Location = new System.Drawing.Point(416, 386);
             this.PlayListOpenBtn.Name = "PlayListOpenBtn";
-            this.PlayListOpenBtn.Size = new System.Drawing.Size(113, 39);
+            this.PlayListOpenBtn.Size = new System.Drawing.Size(170, 39);
             this.PlayListOpenBtn.TabIndex = 10;
-            this.PlayListOpenBtn.Text = "플레이리스트 열기";
-            this.PlayListOpenBtn.UseVisualStyleBackColor = true;
+            this.PlayListOpenBtn.Text = "플레이리스트 가져오기";
+            this.PlayListOpenBtn.UseVisualStyleBackColor = false;
             this.PlayListOpenBtn.Click += new System.EventHandler(this.PlayListOpenBtn_Click);
             // 
             // DBGrid2
             // 
+            this.DBGrid2.BackgroundColor = System.Drawing.Color.White;
             this.DBGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DBGrid2.Location = new System.Drawing.Point(496, 210);
+            this.DBGrid2.Location = new System.Drawing.Point(416, 151);
             this.DBGrid2.Name = "DBGrid2";
             this.DBGrid2.RowTemplate.Height = 23;
-            this.DBGrid2.Size = new System.Drawing.Size(349, 229);
+            this.DBGrid2.Size = new System.Drawing.Size(298, 229);
             this.DBGrid2.TabIndex = 9;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(623, 31);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(222, 40);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "플레이리스트 제작 목록";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Btnadd
             // 
-            this.Btnadd.Location = new System.Drawing.Point(405, 277);
+            this.Btnadd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
+            this.Btnadd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btnadd.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.Btnadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btnadd.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Btnadd.Location = new System.Drawing.Point(361, 229);
             this.Btnadd.Name = "Btnadd";
-            this.Btnadd.Size = new System.Drawing.Size(75, 23);
+            this.Btnadd.Size = new System.Drawing.Size(35, 35);
             this.Btnadd.TabIndex = 13;
-            this.Btnadd.Text = "추가하기";
-            this.Btnadd.UseVisualStyleBackColor = true;
+            this.Btnadd.Text = "▶";
+            this.Btnadd.UseVisualStyleBackColor = false;
             this.Btnadd.Click += new System.EventHandler(this.Btnadd_Click);
             // 
             // Btndelete
             // 
-            this.Btndelete.Location = new System.Drawing.Point(863, 389);
+            this.Btndelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(130)))), ((int)(((byte)(221)))));
+            this.Btndelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Btndelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btndelete.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Btndelete.ForeColor = System.Drawing.Color.White;
+            this.Btndelete.Location = new System.Drawing.Point(639, 460);
             this.Btndelete.Name = "Btndelete";
-            this.Btndelete.Size = new System.Drawing.Size(75, 23);
+            this.Btndelete.Size = new System.Drawing.Size(75, 39);
             this.Btndelete.TabIndex = 14;
-            this.Btndelete.Text = "저장하기";
-            this.Btndelete.UseVisualStyleBackColor = true;
+            this.Btndelete.Text = "저장";
+            this.Btndelete.UseVisualStyleBackColor = false;
             this.Btndelete.Click += new System.EventHandler(this.Btndelete_Click);
             // 
-            // button1
+            // btnpop
             // 
-            this.button1.Location = new System.Drawing.Point(405, 342);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "제거하기";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnpop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
+            this.btnpop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnpop.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnpop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnpop.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnpop.Location = new System.Drawing.Point(361, 270);
+            this.btnpop.Name = "btnpop";
+            this.btnpop.Size = new System.Drawing.Size(35, 35);
+            this.btnpop.TabIndex = 15;
+            this.btnpop.Text = "◀";
+            this.btnpop.UseVisualStyleBackColor = false;
+            this.btnpop.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "제목",
+            "가수/그룹명",
+            "소속사명"});
+            this.comboBox1.Location = new System.Drawing.Point(43, 52);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(117, 29);
+            this.comboBox1.TabIndex = 16;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // make_playlist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1081, 531);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(764, 531);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.btnpop);
             this.Controls.Add(this.Btndelete);
             this.Controls.Add(this.Btnadd);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.PlayListOpenBtn);
             this.Controls.Add(this.DBGrid2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.SearchOpenBtn);
             this.Controls.Add(this.search);
-            this.Controls.Add(this.reset);
             this.Controls.Add(this.DBGrid1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtname);
             this.Controls.Add(this.txttitle);
+            this.MaximumSize = new System.Drawing.Size(780, 570);
+            this.MinimumSize = new System.Drawing.Size(780, 570);
             this.Name = "make_playlist";
-            this.Text = "make_playlist";
+            this.Text = "플레이 리스트 만들기";
+            this.Load += new System.EventHandler(this.make_playlist_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DBGrid1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DBGrid2)).EndInit();
             this.ResumeLayout(false);
@@ -230,20 +232,16 @@ namespace MainForm
         #endregion
 
         private System.Windows.Forms.TextBox txttitle;
-        private System.Windows.Forms.TextBox txtname;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView DBGrid1;
-        private System.Windows.Forms.Button reset;
         private System.Windows.Forms.Button search;
         private System.Windows.Forms.Button SearchOpenBtn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button PlayListOpenBtn;
         private System.Windows.Forms.DataGridView DBGrid2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button Btnadd;
         private System.Windows.Forms.Button Btndelete;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnpop;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
