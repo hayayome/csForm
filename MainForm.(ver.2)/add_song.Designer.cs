@@ -30,26 +30,26 @@ namespace MainForm
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DBGrid1 = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.추가ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.수정ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.삭제ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DAOpenBtn = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DBGrid1)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // DBGrid1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 52);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(740, 467);
-            this.dataGridView1.TabIndex = 0;
+            this.DBGrid1.BackgroundColor = System.Drawing.Color.White;
+            this.DBGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DBGrid1.ContextMenuStrip = this.contextMenuStrip1;
+            this.DBGrid1.Location = new System.Drawing.Point(12, 52);
+            this.DBGrid1.Name = "DBGrid1";
+            this.DBGrid1.RowTemplate.Height = 23;
+            this.DBGrid1.Size = new System.Drawing.Size(740, 467);
+            this.DBGrid1.TabIndex = 0;
             // 
             // contextMenuStrip1
             // 
@@ -102,14 +102,14 @@ namespace MainForm
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(764, 531);
             this.Controls.Add(this.DAOpenBtn);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.DBGrid1);
             this.MaximumSize = new System.Drawing.Size(780, 570);
             this.MinimumSize = new System.Drawing.Size(780, 570);
             this.Name = "add_song";
             this.Text = "add_song";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.add_song_FormClosing);
             this.Load += new System.EventHandler(this.add_song_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DBGrid1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -117,7 +117,7 @@ namespace MainForm
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DBGrid1;
         private System.Windows.Forms.Button DAOpenBtn;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 추가ToolStripMenuItem;

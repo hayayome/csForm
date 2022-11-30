@@ -44,46 +44,12 @@ namespace MainForm
 
         private void Btnadd_Click(object sender, EventArgs e)
         {
-            try
-            {
-                /*dbc.PhoneTable = dbc.DS.Tables["Phone"];
-                DataRow newRow = dbc.PhoneTable.NewRow();
-                newRow["id"] = Convert.ToInt32(txtid.Text);
-                newRow["PName"] = txtName.Text;
-                newRow["Phone"] = txtPhone.Text;
-                newRow["Email"] = txtMail.Text;
 
-                dbc.PhoneTable.Rows.Add(newRow);
-                dbc.DBAdapter.Update(dbc.DS, "Phone");
-                dbc.DS.AcceptChanges();
-                ClearTextBoxes();
-                DBGrid.DataSource = dbc.DS.Tables["Phone"].DefaultView;*/
-            }
-            catch (DataException DE)
-            {
-                MessageBox.Show(DE.Message);
-            }
-            catch (Exception DE)
-            {
-                MessageBox.Show(DE.Message);
-            }
         }
 
         private void PlayListOpenBtn_Click(object sender, EventArgs e)
         {
-          /*  try
-            {
-                dbc.DS.Clear();
-                dbc.DBAdapter.Fill(dbc.DS, "phone");
-                DBGrid.DataSource = dbc.DS.Tables["phone"].DefaultView;
-            }
-            catch (DataException DE)
-            {
-                MessageBox.Show(DE.Message);
-            }
-            catch (Exception DE)
-            {
-                MessageBox.Show(DE.Message);*/
+
             }
 
         private void search_Click(object sender, EventArgs e)
