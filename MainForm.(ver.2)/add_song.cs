@@ -64,5 +64,17 @@ namespace MainForm
         {
 
         }
+
+        private void contextMenuStrip2_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            login login = new login();
+            login.Show();
+        }
     }
 }

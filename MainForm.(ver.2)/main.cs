@@ -37,7 +37,7 @@ namespace MainForm
 
         private void label1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             login login = new login();
             login.Show();
         }
