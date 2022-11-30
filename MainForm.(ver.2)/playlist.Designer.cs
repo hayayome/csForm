@@ -45,7 +45,7 @@ namespace MainForm
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(56, 124);
+            this.dataGridView1.Location = new System.Drawing.Point(39, 124);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 23;
@@ -54,9 +54,10 @@ namespace MainForm
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(60, 354);
+            this.button1.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button1.Location = new System.Drawing.Point(39, 336);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 23);
+            this.button1.Size = new System.Drawing.Size(155, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "플레이리스트 열기";
             this.button1.UseVisualStyleBackColor = true;
@@ -66,7 +67,7 @@ namespace MainForm
             // 
             this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(275, 124);
+            this.dataGridView2.Location = new System.Drawing.Point(261, 124);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 23;
@@ -76,27 +77,30 @@ namespace MainForm
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(87, 96);
+            this.label1.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(36, 106);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 12);
+            this.label1.Size = new System.Drawing.Size(107, 15);
             this.label1.TabIndex = 3;
             this.label1.Text = "플레이리스트 목록";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(522, 96);
+            this.label2.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label2.Location = new System.Drawing.Point(258, 106);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 12);
+            this.label2.Size = new System.Drawing.Size(47, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "곡 목록";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(629, 348);
+            this.button2.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button2.Location = new System.Drawing.Point(615, 338);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 29);
+            this.button2.Size = new System.Drawing.Size(96, 21);
             this.button2.TabIndex = 5;
             this.button2.Text = "곡 삭제하기";
             this.button2.UseVisualStyleBackColor = true;
@@ -104,20 +108,21 @@ namespace MainForm
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(509, 348);
+            this.button4.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button4.Location = new System.Drawing.Point(509, 338);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 29);
+            this.button4.Size = new System.Drawing.Size(100, 21);
             this.button4.TabIndex = 7;
             this.button4.Text = "검색하기";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(301, 350);
+            this.textBox1.Location = new System.Drawing.Point(261, 338);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(168, 21);
+            this.textBox1.Size = new System.Drawing.Size(220, 21);
             this.textBox1.TabIndex = 8;
             // 
             // playlist
