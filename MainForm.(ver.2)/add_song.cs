@@ -24,7 +24,7 @@ namespace MainForm
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
             DBAdapter.SelectCommand = new OracleCommand
-            ("select * from singer where singernum =:singernum ", conn);
+            ("select * from singer where singernum = singernum ", conn);
             DBAdapter.SelectCommand.Parameters.Add("singernum", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
             DBAdapter.Fill(DS, "singer");

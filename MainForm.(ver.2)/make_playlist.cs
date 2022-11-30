@@ -31,11 +31,12 @@ namespace MainForm
             OracleConnection conn = new OracleConnection(ConStr);
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
-            DBAdapter.SelectCommand = new OracleCommand("select * from SINGER where singername = '" + singername + "'", conn);
-            //DBAdapter.SelectCommand.Parameters.Add("singername", OracleDbType.Varchar2, 20);
+            DBAdapter.SelectCommand = new OracleCommand
+            ("select * from singer where singernum = singernum ", conn);
+            DBAdapter.SelectCommand.Parameters.Add("singernum", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
-            DBAdapter.Fill(DS, "SINGER");
-            DataTable phoneTable = DS.Tables["SINGER"];
+            DBAdapter.Fill(DS, "singer");
+            DataTable phoneTable = DS.Tables["singer"];
             DBGrid1.DataSource = phoneTable;
         }
 
