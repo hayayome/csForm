@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Oracle.DataAccess.Client;
 namespace MainForm
 {
     public partial class make_playlist : Form
@@ -26,20 +26,17 @@ namespace MainForm
 
         private void SearchOpenBtn_Click(object sender, EventArgs e)
         {
-            try
-            {
-                /*dbc.DS.Clear();
-                dbc.DBAdapter.Fill(dbc.DS, "phone");
-                DBGrid.DataSource = dbc.DS.Tables["phone"].DefaultView;*/
-            }
-            catch (DataException DE)
-            {
-                MessageBox.Show(DE.Message);
-            }
-            catch (Exception DE)
-            {
-                MessageBox.Show(DE.Message);
-            }
+            string ConStr = "User Id=root; Password=1111; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            OracleConnection conn = new OracleConnection(ConStr);
+            conn.Open();
+            OracleDataAdapter DBAdapter = new OracleDataAdapter();
+            DBAdapter.SelectCommand = new OracleCommand
+            ("select * from musicinfo where name =:name ", conn);
+            DBAdapter.SelectCommand.Parameters.Add("name", OracleDbType.Varchar2, 20);
+            DataSet DS = new DataSet();
+            DBAdapter.Fill(DS, "musicinfo");
+            DataTable phoneTable = DS.Tables["musicinfo"];
+            DBGrid1.DataSource = phoneTable;
         }
 
         private void Btnadd_Click(object sender, EventArgs e)
@@ -49,8 +46,18 @@ namespace MainForm
 
         private void PlayListOpenBtn_Click(object sender, EventArgs e)
         {
-
-            }
+            string ConStr = "User Id=root; Password=1111; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            OracleConnection conn = new OracleConnection(ConStr);
+            conn.Open();
+            OracleDataAdapter DBAdapter = new OracleDataAdapter();
+            DBAdapter.SelectCommand = new OracleCommand
+            ("select * from produce where name =:name ", conn);
+            DBAdapter.SelectCommand.Parameters.Add("name", OracleDbType.Varchar2, 20);
+            DataSet DS = new DataSet();
+            DBAdapter.Fill(DS, "produce");
+            DataTable phoneTable = DS.Tables["produce"];
+            DBGrid2.DataSource = phoneTable;
+        }
 
         private void search_Click(object sender, EventArgs e)
         {

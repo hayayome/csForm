@@ -12,6 +12,7 @@ namespace MainForm
 {
     public partial class add_song_detail : Form
     {
+        DBClass dbc = new DBClass();
         public add_song_detail(String txt)
         {
             InitializeComponent();
@@ -24,24 +25,31 @@ namespace MainForm
             if (e.KeyCode == Keys.Enter)
                 button_Click(sender, e);
         }
+        private void ClearTextBoxes()
+        {
 
+            txtnum.Clear();
+            txtname.Clear();
+            txttitle.Clear();
+            txtagency.Clear();
+        }
         private void button_Click(object sender, EventArgs e)
         {
             if (this.button.Text.Equals("추가"))
             {
                 try
                 {
-                    /*     dbc.PhoneTable = dbc.DS.Tables["Phone"];
-                           DataRow newRow = dbc.PhoneTable.NewRow();
-                           newRow["id"] = Convert.ToInt32(txtnumber.Text);
-                           newRow["PName"] = txtName.Text;
-                           newRow["Phone"] = txttitle.Text;
+                    dbc.PhoneTable = dbc.DS.Tables["musicinfo"];
+                    DataRow newRow = dbc.PhoneTable.NewRow();
+                    newRow["id"] = Convert.ToInt32(txtnum.Text);
+                    newRow["name"] = txtname.Text;
+                    newRow["musictitle"] = txttitle.Text;
+                    newRow["agency"] = txtagency.Text;
 
-                           dbc.PhoneTable.Rows.Add(newRow);
-                           dbc.DBAdapter.Update(dbc.DS, "Phone");
-                           dbc.DS.AcceptChanges();
-                           ClearTextBoxes(); 
-                           DBGrid.DataSource = dbc.DS.Tables["Phone"].DefaultView; */
+                    dbc.PhoneTable.Rows.Add(newRow);
+                    dbc.DBAdapter.Update(dbc.DS, "musicinfo");
+                    dbc.DS.AcceptChanges();
+                    ClearTextBoxes();
                 }
                 catch (DataException DE)
                 {

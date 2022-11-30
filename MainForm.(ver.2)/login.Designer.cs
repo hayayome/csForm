@@ -70,7 +70,6 @@ namespace MainForm
             this.txtId.Size = new System.Drawing.Size(262, 30);
             this.txtId.TabIndex = 1;
             this.txtId.Text = "s";
-            this.txtId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.txtId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtId_KeyDown);
             // 
             // txtPw

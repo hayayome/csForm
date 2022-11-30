@@ -50,6 +50,7 @@ namespace MainForm
             this.DBGrid1.RowTemplate.Height = 23;
             this.DBGrid1.Size = new System.Drawing.Size(740, 467);
             this.DBGrid1.TabIndex = 0;
+            this.DBGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DBGrid1_CellContentClick);
             // 
             // contextMenuStrip1
             // 

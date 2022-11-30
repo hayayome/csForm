@@ -59,5 +59,10 @@ namespace MainForm
         {
             Application.Exit();
         }
+
+        private void DBGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
