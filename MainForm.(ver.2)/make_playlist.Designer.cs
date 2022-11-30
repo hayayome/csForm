@@ -54,6 +54,7 @@ namespace MainForm
             this.txttitle.Name = "txttitle";
             this.txttitle.Size = new System.Drawing.Size(228, 29);
             this.txttitle.TabIndex = 0;
+            this.txttitle.TextChanged += new System.EventHandler(this.txttitle_TextChanged);
             // 
             // DBGrid1
             // 
@@ -64,6 +65,7 @@ namespace MainForm
             this.DBGrid1.RowTemplate.Height = 23;
             this.DBGrid1.Size = new System.Drawing.Size(298, 229);
             this.DBGrid1.TabIndex = 4;
+            this.DBGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DBGrid1_CellContentClick);
             // 
             // search
             // 

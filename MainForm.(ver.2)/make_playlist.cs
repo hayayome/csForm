@@ -26,16 +26,16 @@ namespace MainForm
 
         private void SearchOpenBtn_Click(object sender, EventArgs e)
         {
-            string ConStr = "User Id=root; Password=1111; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            String singername = this.txttitle.Text;
+            string ConStr = "User Id=scott; Password=tiger; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             OracleConnection conn = new OracleConnection(ConStr);
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
-            DBAdapter.SelectCommand = new OracleCommand
-            ("select * from musicinfo where name =:name ", conn);
-            DBAdapter.SelectCommand.Parameters.Add("name", OracleDbType.Varchar2, 20);
+            DBAdapter.SelectCommand = new OracleCommand("select * from SINGER where singername = '" + singername + "'", conn);
+            //DBAdapter.SelectCommand.Parameters.Add("singername", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
-            DBAdapter.Fill(DS, "musicinfo");
-            DataTable phoneTable = DS.Tables["musicinfo"];
+            DBAdapter.Fill(DS, "SINGER");
+            DataTable phoneTable = DS.Tables["SINGER"];
             DBGrid1.DataSource = phoneTable;
         }
 
@@ -46,12 +46,13 @@ namespace MainForm
 
         private void PlayListOpenBtn_Click(object sender, EventArgs e)
         {
-            string ConStr = "User Id=root; Password=1111; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            String singername = this.txttitle.Text;
+            string ConStr = "User Id=scott; Password=tiger; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             OracleConnection conn = new OracleConnection(ConStr);
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
             DBAdapter.SelectCommand = new OracleCommand
-            ("select * from produce where name =:name ", conn);
+            ("select * from SINGER where singername = '" + singername + "';", conn);
             DBAdapter.SelectCommand.Parameters.Add("name", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
             DBAdapter.Fill(DS, "produce");
@@ -75,6 +76,16 @@ namespace MainForm
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DBGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txttitle_TextChanged(object sender, EventArgs e)
         {
 
         }

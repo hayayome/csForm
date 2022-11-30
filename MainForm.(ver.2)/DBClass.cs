@@ -31,7 +31,7 @@ namespace MainForm {
             try
             {
                 string connectionString = "User Id=root; Password=1111; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME = xe) ) );";
-                string commandString = "select * from name";
+                string commandString = "select * from Phone";
                 DBAdapter = new OracleDataAdapter(commandString, connectionString);
                 MyCommandBuilder = new OracleCommandBuilder(DBAdapter);
                 DS = new DataSet();
