@@ -12,10 +12,16 @@ namespace MainForm
 {
     public partial class add_song : Form
     {
-        public add_song()
-        {
-            InitializeComponent();
-        }
+        private int intID;
+        private string strCommand;
+
+        private OracleConnection odpConn = new
+
+        OracleConnection();
+        public int getintID
+        { get { return intID; } }
+        public string getstrCommand
+        { get { return strCommand; } }
 
         private void DAOpenBtn_Click(object sender, EventArgs e)
         {
@@ -29,42 +35,79 @@ namespace MainForm
             DataSet DS = new DataSet();
             DBAdapter.Fill(DS, "singer");
             DataTable phoneTable = DS.Tables["singer"];
-            DBGrid1.DataSource = phoneTable;
+            DBGrid.DataSource = phoneTable;
         }
 
         private void add_song_Load(object sender, EventArgs e)
         {
-
+            showDataGridView();
         }
 
         private void 추가ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            add_song_detail detail = new add_song_detail("추가");
-            detail.ShowDialog();
+            strCommand = "추가";
+            add_song_detail form2 = new add_song_detail(this);
+            form2.ShowDialog();
+            form2.Dispose();
+            showDataGridView();
         }
 
         private void 수정ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            add_song_detail detail = new add_song_detail("수정");
-            detail.ShowDialog();
+            strCommand = "수정";
+            intID =
+            Convert.ToInt32(DBGrid.SelectedCells[0].Value);
+            add_song_detail form2 = new add_song_detail(this);
+            form2.ShowDialog();
+            form2.Dispose();
+            showDataGridView();
         }
 
         private void 삭제ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            add_song_detail detail = new add_song_detail("삭제");
-            detail.ShowDialog();
+            strCommand = "삭제";
+            intID =
+           Convert.ToInt32(DBGrid.SelectedCells[0].Value);
+            add_song_detail form2 = new add_song_detail(this);
+            form2.ShowDialog();
+            form2.Dispose();
+            showDataGridView();
         }
 
         private void add_song_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
-
-        private void DBGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void showDataGridView() //사용자 정의 함수
         {
-
+            try
+            {
+                odpConn.ConnectionString = "User Id=scott; Password=tiger; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+                odpConn.Open();
+                OracleDataAdapter oda = new OracleDataAdapter();
+                oda.SelectCommand = new
+                OracleCommand("SELECT * from singer", odpConn);
+                DataTable dt = new DataTable();
+                oda.Fill(dt);
+                odpConn.Close();
+                DBGrid.DataSource = dt;
+                DBGrid.AutoResizeColumns();
+                DBGrid.AutoSizeColumnsMode =
+                    DataGridViewAutoSizeColumnsMode.Fill;
+                DBGrid.SelectionMode =
+                DataGridViewSelectionMode.FullRowSelect;
+                DBGrid.AllowUserToAddRows = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("에러 발생 : " + ex.ToString());
+                odpConn.Close();
+            }
         }
-
+        public add_song()
+        {
+            InitializeComponent();
+        }
         private void contextMenuStrip2_Opening(object sender, CancelEventArgs e)
         {
 

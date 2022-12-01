@@ -37,7 +37,7 @@ namespace MainForm
             this.label3 = new System.Windows.Forms.Label();
             this.txtagency = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.button = new System.Windows.Forms.Button();
+            this.btnOK = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -64,7 +64,6 @@ namespace MainForm
             this.txtnum.Name = "txtnum";
             this.txtnum.Size = new System.Drawing.Size(270, 30);
             this.txtnum.TabIndex = 8;
-            this.txtnum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtnum_KeyDown);
             // 
             // txtname
             // 
@@ -144,21 +143,21 @@ namespace MainForm
             this.label4.TabIndex = 13;
             this.label4.Text = "소속사";
             // 
-            // button
+            // btnOK
             // 
-            this.button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(130)))), ((int)(((byte)(221)))));
-            this.button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button.FlatAppearance.BorderSize = 0;
-            this.button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button.ForeColor = System.Drawing.Color.White;
-            this.button.Location = new System.Drawing.Point(40, 417);
-            this.button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button.Name = "button";
-            this.button.Size = new System.Drawing.Size(270, 50);
-            this.button.TabIndex = 15;
-            this.button.UseVisualStyleBackColor = false;
-            this.button.Click += new System.EventHandler(this.button_Click);
+            this.btnOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(130)))), ((int)(((byte)(221)))));
+            this.btnOK.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOK.FlatAppearance.BorderSize = 0;
+            this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOK.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnOK.ForeColor = System.Drawing.Color.White;
+            this.btnOK.Location = new System.Drawing.Point(40, 417);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(270, 50);
+            this.btnOK.TabIndex = 15;
+            this.btnOK.UseVisualStyleBackColor = false;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // add_song_detail
             // 
@@ -166,7 +165,7 @@ namespace MainForm
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(354, 511);
-            this.Controls.Add(this.button);
+            this.Controls.Add(this.btnOK);
             this.Controls.Add(this.txtagency);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txttitle);
@@ -194,6 +193,6 @@ namespace MainForm
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtagency;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button;
+        private System.Windows.Forms.Button btnOK;
     }
 }
