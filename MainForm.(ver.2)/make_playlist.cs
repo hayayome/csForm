@@ -48,6 +48,7 @@ namespace MainForm
         private void PlayListOpenBtn_Click(object sender, EventArgs e)
         {
             String singername = this.txttitle.Text;
+            String comboBox1 = this.DBGrid1.Text;
             string ConStr = "User Id=scott; Password=tiger; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             OracleConnection conn = new OracleConnection(ConStr);
             conn.Open();
