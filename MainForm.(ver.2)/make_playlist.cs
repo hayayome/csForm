@@ -12,6 +12,18 @@ namespace MainForm
 {
     public partial class make_playlist : Form
     {
+        private int intID;
+        private string strCommand;
+
+        private OracleConnection odpConn = new
+
+        OracleConnection();
+
+        public int getintID
+        { get { return intID; } }
+        public string getstrCommand
+        { get { return strCommand; } }
+
         public make_playlist()
         {
             InitializeComponent();
@@ -27,16 +39,16 @@ namespace MainForm
         private void SearchOpenBtn_Click(object sender, EventArgs e)
         {
             String singername = this.txttitle.Text;
-            string ConStr = "User Id=scott; Password=tiger; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            string ConStr = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             OracleConnection conn = new OracleConnection(ConStr);
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
             DBAdapter.SelectCommand = new OracleCommand
-            ("select * from singer where singernum = singernum ", conn);
-            DBAdapter.SelectCommand.Parameters.Add("singernum", OracleDbType.Varchar2, 20);
+            ("select * from song where songnum = songnum ", conn);
+            DBAdapter.SelectCommand.Parameters.Add("songnum", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
-            DBAdapter.Fill(DS, "singer");
-            DataTable phoneTable = DS.Tables["singer"];
+            DBAdapter.Fill(DS, "song");
+            DataTable phoneTable = DS.Tables["song"];
             DBGrid1.DataSource = phoneTable;
         }
 
@@ -47,18 +59,16 @@ namespace MainForm
 
         private void PlayListOpenBtn_Click(object sender, EventArgs e)
         {
-            String singername = this.txttitle.Text;
-            String comboBox1 = this.DBGrid1.Text;
-            string ConStr = "User Id=scott; Password=tiger; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            string ConStr = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             OracleConnection conn = new OracleConnection(ConStr);
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
             DBAdapter.SelectCommand = new OracleCommand
-            ("select * from SINGER where singername = '" + singername + "'", conn);
-            DBAdapter.SelectCommand.Parameters.Add("name", OracleDbType.Varchar2, 20);
+            ("select * from song where songnum = songnum ", conn);
+            DBAdapter.SelectCommand.Parameters.Add("songnum", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
-            DBAdapter.Fill(DS, "Singer");
-            DataTable phoneTable = DS.Tables["Singer"];
+            DBAdapter.Fill(DS, "song");
+            DataTable phoneTable = DS.Tables["song"];
             DBGrid2.DataSource = phoneTable;
         }
 
@@ -84,7 +94,29 @@ namespace MainForm
 
         private void DBGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            try
+            {
+                odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+                odpConn.Open();
+                OracleDataAdapter oda = new OracleDataAdapter();
+                oda.SelectCommand = new
+                OracleCommand("SELECT * from song", odpConn);
+                DataTable dt = new DataTable();
+                oda.Fill(dt);
+                odpConn.Close();
+                DBGrid1.DataSource = dt;
+                DBGrid1.AutoResizeColumns();
+                DBGrid1.AutoSizeColumnsMode =
+                    DataGridViewAutoSizeColumnsMode.Fill;
+                DBGrid1.SelectionMode =
+                DataGridViewSelectionMode.FullRowSelect;
+                DBGrid1.AllowUserToAddRows = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("에러 발생 : " + ex.ToString());
+                odpConn.Close();
+            }
         }
 
         private void txttitle_TextChanged(object sender, EventArgs e)

@@ -12,6 +12,18 @@ namespace MainForm
 {
     public partial class playlist : Form
     {
+        private int intID;
+        private string strCommand;
+
+        private OracleConnection odpConn = new
+
+        OracleConnection();
+
+        public int getintID
+        { get { return intID; } }
+        public string getstrCommand
+        { get { return strCommand; } }
+
         public playlist()
         {
             InitializeComponent();
@@ -19,17 +31,17 @@ namespace MainForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string ConStr = "User Id=root; Password=1111; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            string ConStr = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             OracleConnection conn = new OracleConnection(ConStr);
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
             DBAdapter.SelectCommand = new OracleCommand
-            ("select * from playlist where name =:name ", conn);
-            DBAdapter.SelectCommand.Parameters.Add("name", OracleDbType.Varchar2, 20);
+            ("select * from song where songnum = songnum ", conn);
+            DBAdapter.SelectCommand.Parameters.Add("songnum", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
-            DBAdapter.Fill(DS, "playlist");
-            DataTable phoneTable = DS.Tables["playlist"];
-            DBGrid1.DataSource = phoneTable;
+            DBAdapter.Fill(DS, "song");
+            DataTable songTable = DS.Tables["song"];
+            DBGrid1.DataSource = songTable;
         }
 
         private void button2_Click(object sender, EventArgs e)

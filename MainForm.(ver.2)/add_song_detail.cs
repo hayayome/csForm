@@ -32,12 +32,12 @@ namespace MainForm
             txttitle.Clear();
             txtagency.Clear();
         }
-        private void initialTextBoxes()//사용자 함수 정의
+        private void initialTextBoxes()
         {
-            odpConn.ConnectionString = "User Id=scott; Password=tiger; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             int getID = _parent.getintID;
             odpConn.Open();
-            string strqry = "SELECT * FROM singer WHERE singernum=" + getID;
+            string strqry = "SELECT * FROM song WHERE songnum=" + getID;
 
             OracleCommand OraCmd = new OracleCommand(strqry, odpConn);
             OracleDataReader odr = OraCmd.ExecuteReader();
@@ -47,6 +47,7 @@ namespace MainForm
                 txtname.Text = Convert.ToString(odr.GetValue(1));
                 txttitle.Text = Convert.ToString(odr.GetValue(2));
                 txtagency.Text = Convert.ToString(odr.GetValue(3));
+                txtsingernum.Text = Convert.ToString(odr.GetValue(4));
             }
             odr.Close();
             odpConn.Close();
@@ -70,36 +71,36 @@ namespace MainForm
             else btnOK.Text = "추가";
         }
 
-        private int INSERTRow()//사용자 함수 정의
+        private int INSERTRow()
         {
-            odpConn.ConnectionString = "User Id=scott; Password=tiger; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             odpConn.Open();
-            int inid = Convert.ToInt32(txtnum.Text.Trim()); //**
-            String inName = txtname.Text.Trim(); //**
-            String inPhone = txttitle.Text.Trim(); //**
-            String inMail = txtagency.Text.Trim(); //**
-            string strqry = "INSERT INTO singer VALUES ('" + inid + "', '" + inName + "', '" + inPhone + "', '" + inMail + "')";
-            //"INSERT INTO phone VALUES (id, pname, phone, email)"을 수정
+            String inid = txtnum.Text.Trim();
+            String inName = txtname.Text.Trim();
+            String inPhone = txttitle.Text.Trim(); 
+            String inMail = txtagency.Text.Trim();
+            String innum = txtsingernum.Text.Trim();
+            string strqry = "INSERT INTO song VALUES ('" + inid + "', '" + inName + "', '" + inPhone + "', '" + inMail + "', '" + innum + "')";
             OracleCommand OraCmd = new OracleCommand(strqry, odpConn);
-            return OraCmd.ExecuteNonQuery(); //추가되는 행수 반환
+            return OraCmd.ExecuteNonQuery();
         }
-        private int UPDATERow() //사용자 함수 정의
+        private int UPDATERow()
         {
-            odpConn.ConnectionString = "User Id=scott; Password=tiger; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             odpConn.Open();
-            String inName = txtname.Text.Trim(); //**
-            String intitle = txttitle.Text.Trim(); //**
-            String inagency = txtagency.Text.Trim(); //**
-            string strqry = "UPDATE Singer SET Singer='" + intitle + "', email = '" + inagency + "' WHERE id = " + inName;
+            String inName = txtname.Text.Trim();
+            String intitle = txttitle.Text.Trim();
+            String inagency = txtagency.Text.Trim();
+            string strqry = "UPDATE SINGER SET SINGER='" + intitle + "', singeragency = '" + inagency + "' WHERE singername = " + inName;
             OracleCommand OraCmd = new OracleCommand(strqry, odpConn);
-            return OraCmd.ExecuteNonQuery(); //업데이트되는 행수 반환
+            return OraCmd.ExecuteNonQuery();
         }
-        private int DELETERow() //사용자 함수 정의
+        private int DELETERow()
         {
-            odpConn.ConnectionString = "User Id=scott; Password=tiger; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             odpConn.Open();
-            int getID = _parent.getintID; //**
-            string strqry = "DELETE FROM Singer WHERE singernum = '" + getID + "'";
+            int getID = _parent.getintID;
+            string strqry = "DELETE FROM SINGER WHERE singernum = '" + getID + "'";
             OracleCommand OraCmd = new OracleCommand(strqry, odpConn);
             return OraCmd.ExecuteNonQuery();
         }
