@@ -89,15 +89,14 @@ namespace MainForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void DBGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             try
             {
-                odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
-                odpConn.Open(); //192.168.142.10
+                odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+                odpConn.Open();
                 OracleDataAdapter oda = new OracleDataAdapter();
                 oda.SelectCommand = new
                 OracleCommand("SELECT * from phone", odpConn);

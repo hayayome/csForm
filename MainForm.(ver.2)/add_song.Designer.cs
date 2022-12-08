@@ -36,7 +36,6 @@ namespace MainForm
             this.수정ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.삭제ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DAOpenBtn = new System.Windows.Forms.Button();
-            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DBGrid)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
@@ -47,39 +46,42 @@ namespace MainForm
             this.DBGrid.BackgroundColor = System.Drawing.Color.White;
             this.DBGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DBGrid.ContextMenuStrip = this.contextMenuStrip1;
-            this.DBGrid.Location = new System.Drawing.Point(12, 52);
+            this.DBGrid.Location = new System.Drawing.Point(14, 65);
+            this.DBGrid.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DBGrid.Name = "DBGrid";
+            this.DBGrid.RowHeadersWidth = 51;
             this.DBGrid.RowTemplate.Height = 23;
-            this.DBGrid.Size = new System.Drawing.Size(740, 467);
+            this.DBGrid.Size = new System.Drawing.Size(846, 584);
             this.DBGrid.TabIndex = 0;
             // 
             // contextMenuStrip1
             // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.추가ToolStripMenuItem,
             this.수정ToolStripMenuItem,
             this.삭제ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(99, 70);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(109, 76);
             // 
             // 추가ToolStripMenuItem
             // 
             this.추가ToolStripMenuItem.Name = "추가ToolStripMenuItem";
-            this.추가ToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.추가ToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
             this.추가ToolStripMenuItem.Text = "추가";
             this.추가ToolStripMenuItem.Click += new System.EventHandler(this.추가ToolStripMenuItem_Click);
             // 
             // 수정ToolStripMenuItem
             // 
             this.수정ToolStripMenuItem.Name = "수정ToolStripMenuItem";
-            this.수정ToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.수정ToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
             this.수정ToolStripMenuItem.Text = "수정";
             this.수정ToolStripMenuItem.Click += new System.EventHandler(this.수정ToolStripMenuItem_Click);
             // 
             // 삭제ToolStripMenuItem
             // 
             this.삭제ToolStripMenuItem.Name = "삭제ToolStripMenuItem";
-            this.삭제ToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.삭제ToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
             this.삭제ToolStripMenuItem.Text = "삭제";
             this.삭제ToolStripMenuItem.Click += new System.EventHandler(this.삭제ToolStripMenuItem_Click);
             // 
@@ -89,19 +91,14 @@ namespace MainForm
             this.DAOpenBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DAOpenBtn.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.DAOpenBtn.ForeColor = System.Drawing.Color.White;
-            this.DAOpenBtn.Location = new System.Drawing.Point(572, 12);
+            this.DAOpenBtn.Location = new System.Drawing.Point(654, 15);
+            this.DAOpenBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DAOpenBtn.Name = "DAOpenBtn";
-            this.DAOpenBtn.Size = new System.Drawing.Size(180, 34);
+            this.DAOpenBtn.Size = new System.Drawing.Size(206, 42);
             this.DAOpenBtn.TabIndex = 10;
             this.DAOpenBtn.Text = "곡 정보 가져오기";
             this.DAOpenBtn.UseVisualStyleBackColor = false;
             this.DAOpenBtn.Click += new System.EventHandler(this.DAOpenBtn_Click);
-            // 
-            // contextMenuStrip2
-            // 
-            this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
-            this.contextMenuStrip2.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip2_Opening);
             // 
             // button1
             // 
@@ -109,9 +106,10 @@ namespace MainForm
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(40, 12);
+            this.button1.Location = new System.Drawing.Point(46, 15);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 34);
+            this.button1.Size = new System.Drawing.Size(102, 42);
             this.button1.TabIndex = 12;
             this.button1.Text = "로그아웃";
             this.button1.UseVisualStyleBackColor = false;
@@ -119,15 +117,16 @@ namespace MainForm
             // 
             // add_song
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(764, 531);
+            this.ClientSize = new System.Drawing.Size(871, 654);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.DAOpenBtn);
             this.Controls.Add(this.DBGrid);
-            this.MaximumSize = new System.Drawing.Size(780, 570);
-            this.MinimumSize = new System.Drawing.Size(780, 570);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximumSize = new System.Drawing.Size(889, 701);
+            this.MinimumSize = new System.Drawing.Size(889, 701);
             this.Name = "add_song";
             this.Text = "add_song";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.add_song_FormClosing);
@@ -146,7 +145,6 @@ namespace MainForm
         private System.Windows.Forms.ToolStripMenuItem 추가ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 수정ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 삭제ToolStripMenuItem;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
         private System.Windows.Forms.Button button1;
     }
 }

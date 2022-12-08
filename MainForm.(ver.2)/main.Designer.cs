@@ -49,9 +49,10 @@ namespace MainForm
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(0, 104);
+            this.button1.Location = new System.Drawing.Point(0, 130);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 42);
+            this.button1.Size = new System.Drawing.Size(187, 52);
             this.button1.TabIndex = 0;
             this.button1.Text = "플레이리스트 제작";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -66,9 +67,10 @@ namespace MainForm
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
-            this.button2.Location = new System.Drawing.Point(0, 152);
+            this.button2.Location = new System.Drawing.Point(0, 190);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(164, 42);
+            this.button2.Size = new System.Drawing.Size(187, 52);
             this.button2.TabIndex = 1;
             this.button2.Text = "플레이리스트 목록";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -79,8 +81,9 @@ namespace MainForm
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(130)))), ((int)(((byte)(221)))));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(164, 593);
+            this.pictureBox1.Size = new System.Drawing.Size(187, 741);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
@@ -91,20 +94,21 @@ namespace MainForm
             this.label1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 563);
+            this.label1.Location = new System.Drawing.Point(14, 704);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 17);
+            this.label1.Size = new System.Drawing.Size(78, 23);
             this.label1.TabIndex = 3;
             this.label1.Text = "로그아웃";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(175, 10);
-            this.panel1.MaximumSize = new System.Drawing.Size(780, 570);
-            this.panel1.MinimumSize = new System.Drawing.Size(780, 570);
+            this.panel1.Location = new System.Drawing.Point(200, 12);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel1.MaximumSize = new System.Drawing.Size(891, 712);
+            this.panel1.MinimumSize = new System.Drawing.Size(891, 712);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(780, 570);
+            this.panel1.Size = new System.Drawing.Size(891, 712);
             this.panel1.TabIndex = 4;
             // 
             // label2
@@ -113,9 +117,9 @@ namespace MainForm
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(120)))), ((int)(((byte)(220)))));
             this.label2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(11, 30);
+            this.label2.Location = new System.Drawing.Point(13, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 21);
+            this.label2.Size = new System.Drawing.Size(112, 28);
             this.label2.TabIndex = 5;
             this.label2.Text = "환영합니다";
             // 
@@ -125,9 +129,9 @@ namespace MainForm
             this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(120)))), ((int)(((byte)(220)))));
             this.label3.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(12, 51);
+            this.label3.Location = new System.Drawing.Point(14, 64);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 17);
+            this.label3.Size = new System.Drawing.Size(105, 23);
             this.label3.TabIndex = 6;
             this.label3.Text = "userName님";
             // 
@@ -135,17 +139,18 @@ namespace MainForm
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(120)))), ((int)(((byte)(220)))));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(164, 98);
+            this.pictureBox2.Size = new System.Drawing.Size(187, 122);
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
             // main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(964, 591);
+            this.ClientSize = new System.Drawing.Size(1099, 729);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
@@ -154,8 +159,9 @@ namespace MainForm
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.MaximumSize = new System.Drawing.Size(980, 630);
-            this.MinimumSize = new System.Drawing.Size(980, 630);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximumSize = new System.Drawing.Size(1117, 776);
+            this.MinimumSize = new System.Drawing.Size(1117, 776);
             this.Name = "main";
             this.Text = "작업화면 선택";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.main_FormClosing);

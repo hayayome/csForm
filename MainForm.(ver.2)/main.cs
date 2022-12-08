@@ -57,6 +57,5 @@ namespace MainForm
         {
             Application.Exit();
         }
-
     }
 }

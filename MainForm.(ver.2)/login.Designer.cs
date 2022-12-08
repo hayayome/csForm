@@ -50,9 +50,10 @@ namespace MainForm
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(52, 312);
+            this.btnLogin.Location = new System.Drawing.Point(59, 390);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(262, 50);
+            this.btnLogin.Size = new System.Drawing.Size(299, 62);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "로그인";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -63,11 +64,12 @@ namespace MainForm
             this.txtId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
             this.txtId.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtId.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtId.Location = new System.Drawing.Point(52, 188);
+            this.txtId.Location = new System.Drawing.Point(59, 235);
+            this.txtId.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtId.MaxLength = 20;
             this.txtId.Multiline = true;
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(262, 30);
+            this.txtId.Size = new System.Drawing.Size(299, 38);
             this.txtId.TabIndex = 1;
             this.txtId.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtId_KeyDown);
             // 
@@ -76,11 +78,12 @@ namespace MainForm
             this.txtPw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
             this.txtPw.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPw.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtPw.Location = new System.Drawing.Point(52, 224);
+            this.txtPw.Location = new System.Drawing.Point(59, 280);
+            this.txtPw.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPw.MaxLength = 20;
             this.txtPw.Multiline = true;
             this.txtPw.Name = "txtPw";
-            this.txtPw.Size = new System.Drawing.Size(262, 30);
+            this.txtPw.Size = new System.Drawing.Size(299, 38);
             this.txtPw.TabIndex = 2;
             this.txtPw.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             this.txtPw.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPw_KeyDown);
@@ -91,9 +94,9 @@ namespace MainForm
             this.findPw.Cursor = System.Windows.Forms.Cursors.Hand;
             this.findPw.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.findPw.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(130)))), ((int)(((byte)(221)))));
-            this.findPw.Location = new System.Drawing.Point(223, 257);
+            this.findPw.Location = new System.Drawing.Point(255, 321);
             this.findPw.Name = "findPw";
-            this.findPw.Size = new System.Drawing.Size(91, 17);
+            this.findPw.Size = new System.Drawing.Size(118, 23);
             this.findPw.TabIndex = 11;
             this.findPw.Text = "비밀번호 찾기";
             this.findPw.Click += new System.EventHandler(this.label3_Click);
@@ -104,9 +107,9 @@ namespace MainForm
             this.signUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signUp.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.signUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(130)))), ((int)(((byte)(221)))));
-            this.signUp.Location = new System.Drawing.Point(233, 425);
+            this.signUp.Location = new System.Drawing.Point(266, 531);
             this.signUp.Name = "signUp";
-            this.signUp.Size = new System.Drawing.Size(60, 17);
+            this.signUp.Size = new System.Drawing.Size(78, 23);
             this.signUp.TabIndex = 12;
             this.signUp.Text = "회원가입";
             this.signUp.Click += new System.EventHandler(this.label4_Click);
@@ -114,9 +117,10 @@ namespace MainForm
             // logo
             // 
             this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.Location = new System.Drawing.Point(158, 38);
+            this.logo.Location = new System.Drawing.Point(181, 48);
+            this.logo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(50, 50);
+            this.logo.Size = new System.Drawing.Size(57, 62);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logo.TabIndex = 13;
             this.logo.TabStop = false;
@@ -125,9 +129,9 @@ namespace MainForm
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("맑은 고딕", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(124, 91);
+            this.label1.Location = new System.Drawing.Point(142, 114);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 30);
+            this.label1.Size = new System.Drawing.Size(161, 37);
             this.label1.TabIndex = 14;
             this.label1.Text = "환영합니다!";
             // 
@@ -136,9 +140,9 @@ namespace MainForm
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("맑은 고딕", 9.75F);
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(73, 425);
+            this.label2.Location = new System.Drawing.Point(83, 531);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 17);
+            this.label2.Size = new System.Drawing.Size(200, 23);
             this.label2.TabIndex = 15;
             this.label2.Text = "아직 계정이 없으신가요?";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -148,9 +152,9 @@ namespace MainForm
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("맑은 고딕", 9.75F);
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(59, 121);
+            this.label3.Location = new System.Drawing.Point(67, 151);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(249, 17);
+            this.label3.Size = new System.Drawing.Size(323, 23);
             this.label3.TabIndex = 16;
             this.label3.Text = "로그인을 하셔서 제공되는 다양한 기능을";
             // 
@@ -159,18 +163,18 @@ namespace MainForm
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("맑은 고딕", 9.75F);
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(116, 138);
+            this.label4.Location = new System.Drawing.Point(133, 172);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 17);
+            this.label4.Size = new System.Drawing.Size(175, 23);
             this.label4.TabIndex = 17;
             this.label4.Text = "이용하실 수 있습니다";
             // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(369, 501);
+            this.ClientSize = new System.Drawing.Size(419, 616);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -181,8 +185,9 @@ namespace MainForm
             this.Controls.Add(this.txtPw);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.btnLogin);
-            this.MaximumSize = new System.Drawing.Size(385, 540);
-            this.MinimumSize = new System.Drawing.Size(385, 540);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximumSize = new System.Drawing.Size(437, 663);
+            this.MinimumSize = new System.Drawing.Size(437, 663);
             this.Name = "login";
             this.Text = "로그인";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.login_FormClosing);

@@ -30,11 +30,11 @@ namespace MainForm
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
             DBAdapter.SelectCommand = new OracleCommand
-            ("select * from phone where id = id ", conn);
-            DBAdapter.SelectCommand.Parameters.Add("id", OracleDbType.Varchar2, 20);
+            ("select * from song where songnum = songnum ", conn);
+            DBAdapter.SelectCommand.Parameters.Add("songnum", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
-            DBAdapter.Fill(DS, "phone");
-            DataTable phoneTable = DS.Tables["phone"];
+            DBAdapter.Fill(DS, "song");
+            DataTable phoneTable = DS.Tables["song"];
             DBGrid.DataSource = phoneTable;
         }
 
@@ -86,7 +86,7 @@ namespace MainForm
                 odpConn.Open();
                 OracleDataAdapter oda = new OracleDataAdapter();
                 oda.SelectCommand = new
-                OracleCommand("SELECT * from phone", odpConn);
+                OracleCommand("SELECT * from song", odpConn);
                 DataTable dt = new DataTable();
                 oda.Fill(dt);
                 odpConn.Close();
