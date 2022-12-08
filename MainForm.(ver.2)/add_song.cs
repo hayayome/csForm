@@ -25,16 +25,16 @@ namespace MainForm
 
         private void DAOpenBtn_Click(object sender, EventArgs e)
         {
-            string ConStr = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
-            OracleConnection conn = new OracleConnection(ConStr);
+            string ConStr = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            OracleConnection conn = new OracleConnection(ConStr); //192.168.142.10
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
             DBAdapter.SelectCommand = new OracleCommand
-            ("select * from song where songnum = songnum ", conn);
-            DBAdapter.SelectCommand.Parameters.Add("songnum", OracleDbType.Varchar2, 20);
+            ("select * from phone where id = id ", conn);
+            DBAdapter.SelectCommand.Parameters.Add("id", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
-            DBAdapter.Fill(DS, "song");
-            DataTable phoneTable = DS.Tables["song"];
+            DBAdapter.Fill(DS, "phone");
+            DataTable phoneTable = DS.Tables["phone"];
             DBGrid.DataSource = phoneTable;
         }
 
@@ -82,11 +82,11 @@ namespace MainForm
         {
             try
             {
-                odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+                odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
                 odpConn.Open();
                 OracleDataAdapter oda = new OracleDataAdapter();
                 oda.SelectCommand = new
-                OracleCommand("SELECT * from song", odpConn);
+                OracleCommand("SELECT * from phone", odpConn);
                 DataTable dt = new DataTable();
                 oda.Fill(dt);
                 odpConn.Close();

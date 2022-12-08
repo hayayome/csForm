@@ -34,10 +34,10 @@ namespace MainForm
         }
         private void initialTextBoxes()
         {
-            odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             int getID = _parent.getintID;
             odpConn.Open();
-            string strqry = "SELECT * FROM song WHERE songnum=" + getID;
+            string strqry = "SELECT * FROM phone WHERE id =" + getID;
 
             OracleCommand OraCmd = new OracleCommand(strqry, odpConn);
             OracleDataReader odr = OraCmd.ExecuteReader();
@@ -73,25 +73,25 @@ namespace MainForm
 
         private int INSERTRow()
         {
-            odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             odpConn.Open();
             String inid = txtnum.Text.Trim();
             String inName = txtname.Text.Trim();
             String inPhone = txttitle.Text.Trim(); 
             String inMail = txtagency.Text.Trim();
             String innum = txtsingernum.Text.Trim();
-            string strqry = "INSERT INTO song VALUES ('" + inid + "', '" + inName + "', '" + inPhone + "', '" + inMail + "', '" + innum + "')";
+            string strqry = "INSERT INTO phone VALUES ('" + inid + "', '" + inName + "', '" + inPhone + "', '" + inMail + "', '" + innum + "')";
             OracleCommand OraCmd = new OracleCommand(strqry, odpConn);
             return OraCmd.ExecuteNonQuery();
         }
         private int UPDATERow()
         {
-            odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             odpConn.Open();
             String inName = txtname.Text.Trim();
             String intitle = txttitle.Text.Trim();
             String inagency = txtagency.Text.Trim();
-            string strqry = "UPDATE SINGER SET SINGER='" + intitle + "', singeragency = '" + inagency + "' WHERE singername = " + inName;
+            string strqry = "UPDATE phone SET id='" + intitle + "', pname = '" + inagency + "' WHERE phone = " + inName;
             OracleCommand OraCmd = new OracleCommand(strqry, odpConn);
             return OraCmd.ExecuteNonQuery();
         }
