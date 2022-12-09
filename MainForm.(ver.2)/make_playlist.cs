@@ -39,7 +39,7 @@ namespace MainForm
         private void SearchOpenBtn_Click(object sender, EventArgs e)
         {
             String singername = this.txttitle.Text;
-            string ConStr = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            string ConStr = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             OracleConnection conn = new OracleConnection(ConStr);
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
@@ -64,11 +64,11 @@ namespace MainForm
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
             DBAdapter.SelectCommand = new OracleCommand
-            ("select * from phone where id = id ", conn);
-            DBAdapter.SelectCommand.Parameters.Add("id", OracleDbType.Varchar2, 20);
+            ("select * from song where songnum = songnum ", conn);
+            DBAdapter.SelectCommand.Parameters.Add("songnum", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
-            DBAdapter.Fill(DS, "phone");
-            DataTable phoneTable = DS.Tables["phone"];
+            DBAdapter.Fill(DS, "song");
+            DataTable phoneTable = DS.Tables["song"];
             DBGrid2.DataSource = phoneTable;
         }
 
@@ -95,11 +95,11 @@ namespace MainForm
         {
             try
             {
-                odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+                odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
                 odpConn.Open();
                 OracleDataAdapter oda = new OracleDataAdapter();
                 oda.SelectCommand = new
-                OracleCommand("SELECT * from phone", odpConn);
+                OracleCommand("SELECT * from song", odpConn);
                 DataTable dt = new DataTable();
                 oda.Fill(dt);
                 odpConn.Close();

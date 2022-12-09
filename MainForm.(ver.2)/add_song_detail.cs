@@ -79,8 +79,7 @@ namespace MainForm
             String inName = txtname.Text.Trim();
             String inPhone = txttitle.Text.Trim(); 
             String inMail = txtagency.Text.Trim();
-            String innum = txtsingernum.Text.Trim();
-            string strqry = "INSERT INTO phone VALUES ('" + inid + "', '" + inName + "', '" + inPhone + "', '" + inMail + "', '" + innum + "')";
+            string strqry = "INSERT INTO phone VALUES ('" + inid + "', '" + inName + "', '" + inPhone + "', '" + inMail + "')";
             OracleCommand OraCmd = new OracleCommand(strqry, odpConn);
             return OraCmd.ExecuteNonQuery();
         }
