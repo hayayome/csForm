@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Oracle.DataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,11 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace MainForm
 {
     public partial class sign_up : Form
     {
+        private OracleConnection odpConn = new OracleConnection();
         const string idHolder = "아이디";
         const string pwHolder = "비밀번호";
         const string pwConfirmHolder = "비밀번호 확인";
@@ -50,25 +53,16 @@ namespace MainForm
             txtList = new TextBox[] { txtId, txtPw, txtPw2, txtNick };
             foreach (var txt in txtList)
             {
-                //처음 공백 Placeholder 지정
                 txt.ForeColor = Color.DarkGray;
                 if (txt == txtId) txt.Text = idHolder;
                 else if (txt == txtPw) txt.Text = pwHolder;
                 else if (txt == txtPw2) txt.Text = pwConfirmHolder;
                 else if (txt == txtNick) txt.Text = nickHolder;
-                //텍스트박스 커서 Focus 여부에 따라 이벤트 지정
                 txt.GotFocus += RemovePlaceholder;
                 txt.LostFocus += SetPlaceholder;
             }
         }
 
-        private void resetText()
-        {
-            txtId.Text = "";
-            txtPw.Text = "";
-            txtPw2.Text = "";
-            txtNick.Text = "";
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -77,33 +71,43 @@ namespace MainForm
             string userPW2 = txtPw2.Text;
             string userNICK = txtNick.Text;
 
-
-
             if (userID == idHolder || userID == "")
             {
                 MessageBox.Show("아이디를 입력해주세요.");
-                resetText();
+                txtId.Clear();
             }
             else if (userPW == pwHolder || userPW == "")
             {
                 MessageBox.Show("비밀번호를 입력해주세요.");
-                resetText();
+                txtPw.ResetText();
             }
             else if (!userPW.Equals(userPW2))
             {
                 MessageBox.Show("비밀번호가 다릅니다.");
-                resetText();
+                txtPw2.ResetText();
             }
             else if (userNICK == nickHolder || userNICK == "")
             {
                 MessageBox.Show("닉네임을 입력해주세요.");
-                resetText();
+                txtNick.ResetText();
             }
-            else {
+            else if (INSERTRow() > 0)
+            {
                 MessageBox.Show("회원가입을 성공하였습니다.");
-                this.Close();
             }
-                            
+            else MessageBox.Show("다시 한번 확인해주세요.");
+
+        }
+        private int INSERTRow()
+        {
+            odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            odpConn.Open();
+            String inid = txtId.Text.Trim();
+            String inpw = txtPw.Text.Trim();
+            String inpw2 = txtPw2.Text.Trim();
+            string strqry = "INSERT INTO user_user VALUES ('" + inid + "', '" + inpw + "', '" + inpw2 + "')";
+            OracleCommand OraCmd = new OracleCommand(strqry, odpConn);
+            return OraCmd.ExecuteNonQuery();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

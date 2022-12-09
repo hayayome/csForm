@@ -55,8 +55,7 @@ namespace MainForm
         private void 수정ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             strCommand = "수정";
-            intID =
-            Convert.ToInt32(DBGrid.SelectedCells[0].Value);
+            intID = Convert.ToInt32(DBGrid.SelectedCells[0].Value);
             add_song_detail form2 = new add_song_detail(this);
             form2.ShowDialog();
             form2.Dispose();
@@ -66,8 +65,7 @@ namespace MainForm
         private void 삭제ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             strCommand = "삭제";
-            intID =
-           Convert.ToInt32(DBGrid.SelectedCells[0].Value);
+            intID = Convert.ToInt32(DBGrid.SelectedCells[0].Value);
             add_song_detail form2 = new add_song_detail(this);
             form2.ShowDialog();
             form2.Dispose();
@@ -93,7 +91,7 @@ namespace MainForm
                 DBGrid.DataSource = dt;
                 DBGrid.AutoResizeColumns();
                 DBGrid.AutoSizeColumnsMode =
-                    DataGridViewAutoSizeColumnsMode.Fill;
+                DataGridViewAutoSizeColumnsMode.Fill;
                 DBGrid.SelectionMode =
                 DataGridViewSelectionMode.FullRowSelect;
                 DBGrid.AllowUserToAddRows = false;
