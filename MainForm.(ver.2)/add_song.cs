@@ -18,7 +18,7 @@ namespace MainForm
         private OracleConnection odpConn = new
 
         OracleConnection();
-        public int getintID
+        public int getintIDe
         { get { return intID; } }
         public string getstrCommand
         { get { return strCommand; } }
@@ -30,12 +30,12 @@ namespace MainForm
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
             DBAdapter.SelectCommand = new OracleCommand
-            ("select * from song where song = song ", conn);
+            ("select * from song where songnum = songnum ", conn);
             DBAdapter.SelectCommand.Parameters.Add("song", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
             DBAdapter.Fill(DS, "song");
-            DataTable phoneTable = DS.Tables["song"];
-            DBGrid.DataSource = phoneTable;
+            DataTable songTable = DS.Tables["song"];
+            DBGrid.DataSource = songTable;
         }
 
         private void add_song_Load(object sender, EventArgs e)

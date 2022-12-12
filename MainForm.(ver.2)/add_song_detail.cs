@@ -28,25 +28,25 @@ namespace MainForm
         private void ClearTextBoxes()
         {
             txtnum.Clear();
-            txtname.Clear();
             txttitle.Clear();
-            txtagency.Clear();
+            txtyear.Clear();
+            txtgenre.Clear();
         }
         private void initialTextBoxes()
         {
             odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
-            int getID = _parent.getintID;
+            int getID = _parent.getintIDe;
             odpConn.Open();
-            string strqry = "SELECT * FROM phone WHERE id =" + getID;
+            string strqry = "SELECT * FROM song WHERE songnum =" + getID;
 
             OracleCommand OraCmd = new OracleCommand(strqry, odpConn);
             OracleDataReader odr = OraCmd.ExecuteReader();
             while (odr.Read())
             {
                 txtnum.Text = Convert.ToString(odr.GetValue(0));
-                txtname.Text = Convert.ToString(odr.GetValue(1));
-                txttitle.Text = Convert.ToString(odr.GetValue(2));
-                txtagency.Text = Convert.ToString(odr.GetValue(3));
+                txttitle.Text = Convert.ToString(odr.GetValue(1));
+                txtyear.Text = Convert.ToString(odr.GetValue(2));
+                txtgenre.Text = Convert.ToString(odr.GetValue(3));
                 txtsingernum.Text = Convert.ToString(odr.GetValue(4));
             }
             odr.Close();
@@ -65,7 +65,7 @@ namespace MainForm
             {
                 btnOK.Text = "수정";
                 txtnum.Enabled = false;
-                txtname.Enabled = false;
+                txttitle.Enabled = false;
                 initialTextBoxes();
             }
             else btnOK.Text = "추가";
@@ -75,11 +75,12 @@ namespace MainForm
         {
             odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             odpConn.Open();
-            String inid = txtnum.Text.Trim();
-            String inName = txtname.Text.Trim();
-            String inPhone = txttitle.Text.Trim(); 
-            String inMail = txtagency.Text.Trim();
-            string strqry = "INSERT INTO phone VALUES ('" + inid + "', '" + inName + "', '" + inPhone + "', '" + inMail + "')";
+            int innum = Convert.ToInt32(txtnum.Text.Trim());
+            String intitle = txttitle.Text.Trim();
+            String inyear = txtyear.Text.Trim(); 
+            String ingenre = txtgenre.Text.Trim();
+            String inname = txtsingernum.Text.Trim();
+            string strqry = "INSERT INTO song VALUES ('" + innum + "', '" + intitle + "', '" + inyear + "', '" + ingenre + "','" + inname + "')";
             OracleCommand OraCmd = new OracleCommand(strqry, odpConn);
             return OraCmd.ExecuteNonQuery();
         }
@@ -87,19 +88,21 @@ namespace MainForm
         {
             odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             odpConn.Open();
-            String inName = txtname.Text.Trim();
+            int innum = Convert.ToInt32(txtnum.Text.Trim());
             String intitle = txttitle.Text.Trim();
-            String inagency = txtagency.Text.Trim();
-            string strqry = "UPDATE phone SET id='" + intitle + "', pname = '" + inagency + "' WHERE phone = " + inName;
+            String inyear = txtyear.Text.Trim();
+            String ingenre = txtgenre.Text.Trim();
+            String inname = txtsingernum.Text.Trim();
+            string strqry = "UPDATE song SET songname = '" + intitle + "', songyear = '" + inyear + "', genre = '" + ingenre + "', singernm = '" + inname + "' WHERE songnum = " + innum;
             OracleCommand OraCmd = new OracleCommand(strqry, odpConn);
             return OraCmd.ExecuteNonQuery();
         }
         private int DELETERow()
         {
-            odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            odpConn.ConnectionString = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             odpConn.Open();
-            int getID = _parent.getintID;
-            string strqry = "DELETE FROM SINGER WHERE singernum = '" + getID + "'";
+            int getIDe = _parent.getintIDe;
+            string strqry = "DELETE FROM song WHERE songnum = '" + getIDe + "'";
             OracleCommand OraCmd = new OracleCommand(strqry, odpConn);
             return OraCmd.ExecuteNonQuery();
         }

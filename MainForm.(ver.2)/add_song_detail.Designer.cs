@@ -31,11 +31,11 @@ namespace MainForm
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtnum = new System.Windows.Forms.TextBox();
-            this.txtname = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.txttitle = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtyear = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtagency = new System.Windows.Forms.TextBox();
+            this.txtgenre = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnOK = new System.Windows.Forms.Button();
             this.txtsingernum = new System.Windows.Forms.TextBox();
@@ -67,21 +67,21 @@ namespace MainForm
             this.txtnum.Size = new System.Drawing.Size(309, 38);
             this.txtnum.TabIndex = 8;
             // 
-            // txtname
+            // txttitle
             // 
-            this.txtname.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
-            this.txtname.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtname.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtname.Location = new System.Drawing.Point(46, 145);
-            this.txtname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtname.MaximumSize = new System.Drawing.Size(309, 38);
-            this.txtname.MaxLength = 30;
-            this.txtname.MinimumSize = new System.Drawing.Size(309, 38);
-            this.txtname.Multiline = true;
-            this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(309, 38);
-            this.txtname.TabIndex = 10;
-            this.txtname.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtnum_KeyDown);
+            this.txttitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
+            this.txttitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txttitle.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txttitle.Location = new System.Drawing.Point(46, 145);
+            this.txttitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txttitle.MaximumSize = new System.Drawing.Size(309, 38);
+            this.txttitle.MaxLength = 30;
+            this.txttitle.MinimumSize = new System.Drawing.Size(309, 38);
+            this.txttitle.Multiline = true;
+            this.txttitle.Name = "txttitle";
+            this.txttitle.Size = new System.Drawing.Size(309, 38);
+            this.txttitle.TabIndex = 10;
+            this.txttitle.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtnum_KeyDown);
             // 
             // label2
             // 
@@ -93,21 +93,21 @@ namespace MainForm
             this.label2.TabIndex = 9;
             this.label2.Text = "제목";
             // 
-            // txttitle
+            // txtyear
             // 
-            this.txttitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
-            this.txttitle.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txttitle.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txttitle.Location = new System.Drawing.Point(46, 244);
-            this.txttitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txttitle.MaximumSize = new System.Drawing.Size(309, 38);
-            this.txttitle.MaxLength = 30;
-            this.txttitle.MinimumSize = new System.Drawing.Size(309, 38);
-            this.txttitle.Multiline = true;
-            this.txttitle.Name = "txttitle";
-            this.txttitle.Size = new System.Drawing.Size(309, 38);
-            this.txttitle.TabIndex = 12;
-            this.txttitle.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtnum_KeyDown);
+            this.txtyear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
+            this.txtyear.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtyear.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtyear.Location = new System.Drawing.Point(46, 244);
+            this.txtyear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtyear.MaximumSize = new System.Drawing.Size(309, 38);
+            this.txtyear.MaxLength = 30;
+            this.txtyear.MinimumSize = new System.Drawing.Size(309, 38);
+            this.txtyear.Multiline = true;
+            this.txtyear.Name = "txtyear";
+            this.txtyear.Size = new System.Drawing.Size(309, 38);
+            this.txtyear.TabIndex = 12;
+            this.txtyear.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtnum_KeyDown);
             // 
             // label3
             // 
@@ -119,21 +119,21 @@ namespace MainForm
             this.label3.TabIndex = 11;
             this.label3.Text = "발매날짜";
             // 
-            // txtagency
+            // txtgenre
             // 
-            this.txtagency.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
-            this.txtagency.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtagency.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.txtagency.Location = new System.Drawing.Point(46, 342);
-            this.txtagency.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtagency.MaximumSize = new System.Drawing.Size(309, 38);
-            this.txtagency.MaxLength = 30;
-            this.txtagency.MinimumSize = new System.Drawing.Size(309, 38);
-            this.txtagency.Multiline = true;
-            this.txtagency.Name = "txtagency";
-            this.txtagency.Size = new System.Drawing.Size(309, 38);
-            this.txtagency.TabIndex = 14;
-            this.txtagency.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtnum_KeyDown);
+            this.txtgenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(244)))));
+            this.txtgenre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtgenre.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtgenre.Location = new System.Drawing.Point(46, 342);
+            this.txtgenre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtgenre.MaximumSize = new System.Drawing.Size(309, 38);
+            this.txtgenre.MaxLength = 30;
+            this.txtgenre.MinimumSize = new System.Drawing.Size(309, 38);
+            this.txtgenre.Multiline = true;
+            this.txtgenre.Name = "txtgenre";
+            this.txtgenre.Size = new System.Drawing.Size(309, 38);
+            this.txtgenre.TabIndex = 14;
+            this.txtgenre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtnum_KeyDown);
             // 
             // label4
             // 
@@ -195,11 +195,11 @@ namespace MainForm
             this.Controls.Add(this.txtsingernum);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnOK);
-            this.Controls.Add(this.txtagency);
+            this.Controls.Add(this.txtgenre);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txttitle);
+            this.Controls.Add(this.txtyear);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtname);
+            this.Controls.Add(this.txttitle);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtnum);
             this.Controls.Add(this.label1);
@@ -207,7 +207,7 @@ namespace MainForm
             this.MaximumSize = new System.Drawing.Size(420, 676);
             this.MinimumSize = new System.Drawing.Size(420, 676);
             this.Name = "add_song_detail";
-            this.Text = "d";
+            this.Text = "신곡 추가";
             this.Load += new System.EventHandler(this.add_song_detail_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -217,11 +217,11 @@ namespace MainForm
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtnum;
-        private System.Windows.Forms.TextBox txtname;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txttitle;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtyear;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtagency;
+        private System.Windows.Forms.TextBox txtgenre;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.TextBox txtsingernum;
