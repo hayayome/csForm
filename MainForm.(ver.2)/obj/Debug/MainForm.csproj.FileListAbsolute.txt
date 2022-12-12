@@ -103,3 +103,4 @@ C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.playl
 C:\Users\escv1\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.add_song.resources
 C:\Users\user\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.csproj.AssemblyReference.cache
 C:\Users\user\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\user\Documents\GitHub\csForm\MainForm.(ver.2)\obj\Debug\MainForm.withdraw.resources

@@ -57,5 +57,12 @@ namespace MainForm
         {
             Application.Exit();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            withdraw f6 = new withdraw();
+            f6.Show();
+            this.Hide();
+        }
     }
 }

@@ -94,9 +94,10 @@ namespace MainForm
             else if (INSERTRow() > 0)
             {
                 MessageBox.Show("회원가입을 성공하였습니다.");
+                this.Close();
             }
             else MessageBox.Show("다시 한번 확인해주세요.");
-
+            
         }
         private int INSERTRow()
         {
