@@ -64,11 +64,11 @@ namespace MainForm
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
             DBAdapter.SelectCommand = new OracleCommand
-            ("select * from song where songnum = songnum ", conn);
-            DBAdapter.SelectCommand.Parameters.Add("songnum", OracleDbType.Varchar2, 20);
+            ("select * from playlist where playlistnum = playlistnum", conn);
+            DBAdapter.SelectCommand.Parameters.Add("playlist", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
-            DBAdapter.Fill(DS, "song");
-            DataTable phoneTable = DS.Tables["song"];
+            DBAdapter.Fill(DS, "playlist");
+            DataTable phoneTable = DS.Tables["playlist"];
             DBGrid2.DataSource = phoneTable;
         }
 
