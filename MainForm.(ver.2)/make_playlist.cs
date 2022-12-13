@@ -38,13 +38,12 @@ namespace MainForm
 
         private void SearchOpenBtn_Click(object sender, EventArgs e)
         {
-            String singername = this.txttitle.Text;
             string ConStr = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             OracleConnection conn = new OracleConnection(ConStr);
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
             DBAdapter.SelectCommand = new OracleCommand
-            ("select * from song where songnum = songnum ", conn);
+            ("SELECT * from song order by songnum ASC ", conn);
             DBAdapter.SelectCommand.Parameters.Add("songnum", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
             DBAdapter.Fill(DS, "song");
@@ -74,14 +73,13 @@ namespace MainForm
 
         private void search_Click(object sender, EventArgs e)
         {
-            String inCBB = CBB1.SelectedItem.ToString();
             String intxt = txttitle.Text.Trim();
             string ConStr = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             OracleConnection conn = new OracleConnection(ConStr); //192.168.142.10
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
             DBAdapter.SelectCommand = new OracleCommand
-            ("select * from song where'" +inCBB+"'Like'%"+ intxt+"%'" , conn);
+            ("select * from song where songname Like'%"+ intxt+"%'" , conn);
             DBAdapter.SelectCommand.Parameters.Add("song", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
             DBAdapter.Fill(DS, "song");
