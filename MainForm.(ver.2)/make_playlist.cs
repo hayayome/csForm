@@ -27,7 +27,7 @@ namespace MainForm
         public make_playlist()
         {
             InitializeComponent();
-            comboBox1.SelectedIndex = 0;
+            CBB1.SelectedIndex = 0;
         }
 
         private void Btndelete_Click(object sender, EventArgs e)
@@ -64,23 +64,24 @@ namespace MainForm
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
             DBAdapter.SelectCommand = new OracleCommand
-            ("select * from playlist where playlistnum = playlistnum", conn);
-            DBAdapter.SelectCommand.Parameters.Add("playlist", OracleDbType.Varchar2, 20);
+            ("select * from songsave where snumber = snumber", conn);
+            DBAdapter.SelectCommand.Parameters.Add("songsave", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
-            DBAdapter.Fill(DS, "playlist");
-            DataTable phoneTable = DS.Tables["playlist"];
+            DBAdapter.Fill(DS, "songsave");
+            DataTable phoneTable = DS.Tables["songsave"];
             DBGrid2.DataSource = phoneTable;
         }
 
         private void search_Click(object sender, EventArgs e)
         {
+            String inCBB = CBB1.SelectedItem.ToString();
             String intxt = txttitle.Text.Trim();
             string ConStr = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             OracleConnection conn = new OracleConnection(ConStr); //192.168.142.10
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
             DBAdapter.SelectCommand = new OracleCommand
-            ("select * from song where songname Like'%"+ intxt+"%'" , conn);
+            ("select * from song where'" +inCBB+"'Like'%"+ intxt+"%'" , conn);
             DBAdapter.SelectCommand.Parameters.Add("song", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
             DBAdapter.Fill(DS, "song");

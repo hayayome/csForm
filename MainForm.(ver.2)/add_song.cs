@@ -15,9 +15,7 @@ namespace MainForm
         private int intID;
         private string strCommand;
 
-        private OracleConnection odpConn = new
-
-        OracleConnection();
+        private OracleConnection odpConn = new OracleConnection();
         public int getintIDe
         { get { return intID; } }
         public string getstrCommand
@@ -84,7 +82,7 @@ namespace MainForm
                 odpConn.Open();
                 OracleDataAdapter oda = new OracleDataAdapter();
                 oda.SelectCommand = new
-                OracleCommand("SELECT * from song", odpConn);
+                OracleCommand("SELECT * from song order by songnum ASC", odpConn);
                 DataTable dt = new DataTable();
                 oda.Fill(dt);
                 odpConn.Close();

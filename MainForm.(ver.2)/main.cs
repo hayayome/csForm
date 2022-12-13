@@ -64,5 +64,11 @@ namespace MainForm
             f6.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            First f7 = new First();
+            panelSet(f7);
+        }
     }
 }

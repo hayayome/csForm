@@ -40,7 +40,7 @@ namespace MainForm
             this.Btnadd = new System.Windows.Forms.Button();
             this.Btndelete = new System.Windows.Forms.Button();
             this.btnpop = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CBB1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.DBGrid1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DBGrid2)).BeginInit();
             this.SuspendLayout();
@@ -198,20 +198,20 @@ namespace MainForm
             this.btnpop.UseVisualStyleBackColor = false;
             this.btnpop.Click += new System.EventHandler(this.button1_Click);
             // 
-            // comboBox1
+            // CBB1
             // 
-            this.comboBox1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.CBB1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.CBB1.FormattingEnabled = true;
+            this.CBB1.Items.AddRange(new object[] {
             "제목",
-            "가수/그룹명",
-            "소속사명"});
-            this.comboBox1.Location = new System.Drawing.Point(49, 65);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(133, 36);
-            this.comboBox1.TabIndex = 16;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            "가수/그룹",
+            "소속사"});
+            this.CBB1.Location = new System.Drawing.Point(49, 65);
+            this.CBB1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.CBB1.Name = "CBB1";
+            this.CBB1.Size = new System.Drawing.Size(133, 36);
+            this.CBB1.TabIndex = 16;
+            this.CBB1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // make_playlist
             // 
@@ -219,7 +219,7 @@ namespace MainForm
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(871, 654);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.CBB1);
             this.Controls.Add(this.btnpop);
             this.Controls.Add(this.Btndelete);
             this.Controls.Add(this.Btnadd);
@@ -257,6 +257,6 @@ namespace MainForm
         private System.Windows.Forms.Button Btnadd;
         private System.Windows.Forms.Button Btndelete;
         private System.Windows.Forms.Button btnpop;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CBB1;
     }
 }

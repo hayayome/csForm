@@ -31,16 +31,16 @@ namespace MainForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string ConStr = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.142.10)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            string ConStr = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
             OracleConnection conn = new OracleConnection(ConStr);
             conn.Open();
             OracleDataAdapter DBAdapter = new OracleDataAdapter();
             DBAdapter.SelectCommand = new OracleCommand
-            ("select * from song where songnum = songnum ", conn);
-            DBAdapter.SelectCommand.Parameters.Add("songnum", OracleDbType.Varchar2, 20);
+            ("select * from playlist where playlistnum = playlistnum ", conn);
+            DBAdapter.SelectCommand.Parameters.Add("playlistnum", OracleDbType.Varchar2, 20);
             DataSet DS = new DataSet();
-            DBAdapter.Fill(DS, "song");
-            DataTable songTable = DS.Tables["song"];
+            DBAdapter.Fill(DS, "playlist");
+            DataTable songTable = DS.Tables["playlist"];
             DBGrid1.DataSource = songTable;
         }
 
