@@ -176,9 +176,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\아이들 nxde.jfif" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\logo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\은하 사건의 지평선.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\뉴진스.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\저스디스.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\르세라핌.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
