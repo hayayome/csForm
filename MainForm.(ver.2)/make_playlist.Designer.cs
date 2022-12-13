@@ -61,12 +61,12 @@ namespace MainForm
             // 
             this.DBGrid1.BackgroundColor = System.Drawing.Color.White;
             this.DBGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DBGrid1.Location = new System.Drawing.Point(49, 189);
+            this.DBGrid1.Location = new System.Drawing.Point(12, 189);
             this.DBGrid1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DBGrid1.Name = "DBGrid1";
             this.DBGrid1.RowHeadersWidth = 51;
             this.DBGrid1.RowTemplate.Height = 23;
-            this.DBGrid1.Size = new System.Drawing.Size(341, 286);
+            this.DBGrid1.Size = new System.Drawing.Size(378, 286);
             this.DBGrid1.TabIndex = 4;
             this.DBGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DBGrid1_CellContentClick);
             // 
@@ -93,7 +93,7 @@ namespace MainForm
             this.SearchOpenBtn.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.SearchOpenBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SearchOpenBtn.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.SearchOpenBtn.Location = new System.Drawing.Point(49, 482);
+            this.SearchOpenBtn.Location = new System.Drawing.Point(98, 482);
             this.SearchOpenBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.SearchOpenBtn.Name = "SearchOpenBtn";
             this.SearchOpenBtn.Size = new System.Drawing.Size(194, 49);
@@ -106,7 +106,7 @@ namespace MainForm
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(46, 164);
+            this.label3.Location = new System.Drawing.Point(12, 162);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 23);
             this.label3.TabIndex = 8;
@@ -129,7 +129,7 @@ namespace MainForm
             this.PlayListOpenBtn.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.PlayListOpenBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PlayListOpenBtn.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.PlayListOpenBtn.Location = new System.Drawing.Point(475, 482);
+            this.PlayListOpenBtn.Location = new System.Drawing.Point(536, 482);
             this.PlayListOpenBtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PlayListOpenBtn.Name = "PlayListOpenBtn";
             this.PlayListOpenBtn.Size = new System.Drawing.Size(246, 49);
@@ -147,7 +147,7 @@ namespace MainForm
             this.DBGrid2.Name = "DBGrid2";
             this.DBGrid2.RowHeadersWidth = 51;
             this.DBGrid2.RowTemplate.Height = 23;
-            this.DBGrid2.Size = new System.Drawing.Size(341, 286);
+            this.DBGrid2.Size = new System.Drawing.Size(384, 286);
             this.DBGrid2.TabIndex = 9;
             // 
             // Btnadd

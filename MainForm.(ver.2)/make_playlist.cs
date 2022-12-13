@@ -74,7 +74,18 @@ namespace MainForm
 
         private void search_Click(object sender, EventArgs e)
         {
-
+            String intxt = txttitle.Text.Trim();
+            string ConStr = "User Id=system; Password=system; Data Source=(DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521)) (CONNECT_DATA = (SERVER = DEDICATED) (SERVICE_NAME =xe) ) );";
+            OracleConnection conn = new OracleConnection(ConStr); //192.168.142.10
+            conn.Open();
+            OracleDataAdapter DBAdapter = new OracleDataAdapter();
+            DBAdapter.SelectCommand = new OracleCommand
+            ("select * from song where songname Like'%"+ intxt+"%'" , conn);
+            DBAdapter.SelectCommand.Parameters.Add("song", OracleDbType.Varchar2, 20);
+            DataSet DS = new DataSet();
+            DBAdapter.Fill(DS, "song");
+            DataTable songTable = DS.Tables["song"];
+            DBGrid1.DataSource = songTable;
         }
 
         private void make_playlist_Load(object sender, EventArgs e)
